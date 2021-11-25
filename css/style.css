@@ -41,7 +41,7 @@
         transform: rotate(0deg);
     }
     100%{
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
@@ -183,11 +183,30 @@
     z-index: 1;
 }
 
+.container .home-text  {
+  width: 70%;
+}
+
 .home-text h1{
-    font-size: 45px;
+    font-size: 70px;
     font-weight: 700;
     color: #070606;
     margin: 0 0 20px;
+}
+
+.container .home-text input {
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.container .home-text .home-btn a {
+  background-color: #16b1e9;
+    color: white;
+    border-radius: 10px;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
 }
 
 .home .home-btn{
@@ -196,10 +215,12 @@
 
 .home .home-btn .video-play-btn{
     margin-left: 30px;
+    border-radius: 50%;
     font-size: 16px;
     height: 50px;
     width: 50px;
     padding: 0;
+    background-color: white;
     animation: pulse_01 2s ease infinite;
 }
 
@@ -218,16 +239,26 @@
     font-weight: 300;
 }
 
-.home-img img{
-    max-width: 250px;
+.container .home-img .logo-home{
+    /* max-width: 250px; */
     width: 100%;
     box-shadow: var(--shadow-black-100);
     border-radius: 32px;
-    animation: bounceTop_01 3s ease infinite;
+    /* animation: bounceTop_01 3s ease infinite; */
 }
 
-.home-img {
+.container .home-img {
     position: relative;
+}
+
+.container
+.home-img
+.avion-azul {
+  position: absolute;
+  width: 185px;
+  transform: rotate(15deg);
+  bottom: -100px;
+  right: -52px;
 }
 
 .home-img .circle {
@@ -245,14 +276,27 @@
 .home-img .circle:before {
     content: '';
     position: absolute;
-    height: 60px;
-    width: 60px;
-    background-color: rgba(255,255,255,0.4);
-    border-radius: 50%;
-    left: 30px;
-    top: 30px;
+    height: 92px;
+    width: 146px;
+    background-image: url('../img/avion-rosa.png');
+    /* border-radius: 50%; */
+    left: -96px;
+    top: -64px;
     transform-origin: 170px 170px;
-    animation: spin_01 10S linear infinite;
+    /* animation: spin_01 10S linear infinite; */
+}
+
+.home-img img:before {
+  content: '';
+  position: absolute;
+  height: 92px;
+  width: 146px;
+  background-image: url('../img/avion-azul.png');
+  /* border-radius: 50%; */
+  left: 30px;
+  top: 30px;
+  transform-origin: 170px 170px;
+  animation: spin_01 10S linear infinite;
 }
 
 /*---------------------------------- 
