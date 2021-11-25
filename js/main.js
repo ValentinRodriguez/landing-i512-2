@@ -1,54 +1,47 @@
 $(document).ready(function () {
-    // SCROLL
-    $(window).on("scroll", function () {
+       // SCROLL
+       $(window).on("scroll", function () {
         if ($(this).scrollTop() > 90) {
             $(".navbar").addClass("navbar-shrink");
-            $(".nav-link").addClass("letter-white");
-            $(".navbar .nav-item i").addClass("letter-white");
-        } else {
+        }else{
             $(".navbar").removeClass("navbar-shrink");
-            $(".nav-link").removeClass("letter-white");
-            $(".navbar .nav-item i").removeClass("letter-white");
         }
     })
 
-    // $(window).resize(function(){
-    //     if($(window).width()<991){
-    //         $(".dip-cert .container .row").addClass("owl-carousel features-carousel");
-    //     } 
-    //     else {
-    //         $(".dip-cert .container .row").removeClass("owl-carousel features-carousel");
-    //     }
-    // });
+    // VIDEO POPUP
+    const videoSrc = $("#player-1").attr("src");
+    $(".video-play-btn, .video-popup").on("click", function () {
+        if ($(".video-popup").hasClass("open")) {
+            $(".video-popup").removeClass("open");
+            $("#player-1").attr("src","")
+        } else {
+            $(".video-popup").addClass("open");
+            if ($("#player-1").attr("src") == "") {
+                $("#player-1").attr("src","videoSrc")                
+            }
+        }
+    })
 
     //CAROUSEL FEATURES
     $('.features-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive : {
             // breakpoint from 0 up
-            0: {
-                items: 1,
+            0 : {
+                items : 1,
             },
             // breakpoint from 480 up
-            800: {
-                items: 2,
+            600 : {
+                items : 2,
             },
             // breakpoint from 768 up
-            // 1000 : {
-            //     items : 3,
-            // }
+            1000 : {
+                items : 3,
+            }
         }
     });
-    var owl = $('.owl-carousel');
-    $('#customNextBtn').click(function () {
-        owl.trigger('next.owl.carousel');
-    })
-
-    $('#customNextBtn2').click(function () {
-        owl.trigger('next.owl.carousel');
-    })
 
 })
 
