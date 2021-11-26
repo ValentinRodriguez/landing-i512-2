@@ -505,7 +505,6 @@ Video POPUP
 .sub-container-separte-sec {
   background: rgba(149, 203, 238, 0.08);
   border-radius: 15.7018px;
-  /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
 
 .sub-container-beneficios {
@@ -522,7 +521,7 @@ Video POPUP
   font-size: 50px;
   line-height: 90px;
   text-align: center;
-
+  margin-top: 0.5rem;
   color: #000000;
   text-align: center;
 }
@@ -543,7 +542,7 @@ Video POPUP
 
 .btn-beneficios-section-1 {
   position: relative;
-  width: 70%;
+  width: 80%;
   height: 110px;
   left: 50px;
   top: 60px;
@@ -576,7 +575,7 @@ Video POPUP
 
 .btn-beneficios-section-2 {
   position: relative;
-  width: 70%;
+  width: 80%;
   height: 110px;
   left: 50px;
   top: 120px;
@@ -604,6 +603,16 @@ Video POPUP
 }
 
 .btn-beneficios-section-2:hover .rectangle-beneficios {
+  background: #ffffff;
+}
+
+.btn-beneficios-section-active {
+  background: #a0be52;
+  color: #ffffff;
+  width: 90%;
+}
+
+.btn-beneficios-section-active .rectangle-beneficios {
   background: #ffffff;
 }
 
@@ -648,13 +657,14 @@ Video POPUP
 .item-beneficios {
   display: flex;
   flex-direction: row;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.2rem;
   max-width: 90%;
 }
 
 .mini-rectangle-beneficios {
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 5px;
+  height: 20px !important;
 
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
@@ -712,4 +722,126 @@ Video POPUP
 .row
 img {
   cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+  .sub-container-beneficios {
+    width: 358px;
+    height: 320px;
+  }
+  .title-beneficios {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 90px;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #000000;
+    text-align: center;
+  }
+
+  .rectangle-beneficios {
+    width: 38px;
+    height: 38px;
+    background: #a0be52;
+    box-shadow: -1px 4px 9px rgba(130, 185, 219, 0.45);
+    border-radius: 10px;
+  }
+
+  .img-avion-beneficios {
+    position: relative;
+    left: 12px;
+    top: 6px;
+    width: 20px;
+  }
+  
+  .img-line-1-beneficios {
+    position: absolute;
+    top: 19px;
+    left: 22px;
+    
+    width: 6px;
+  }
+  
+  .img-line-2-beneficios {
+    position: absolute;
+    top: 21px;
+    left: 27px;
+    
+    width: 6px;
+  }
+  
+  .img-line-3-beneficios {
+    position: absolute;
+    top: 25px;
+    left: 29px;
+    
+    width: 6px;
+  }
+  
+  .book-beneficios {
+    position: absolute;
+    top: 4px;
+    left: 30px;
+    width: 20px;
+  }
+
+  .btn-beneficios-section-1 {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    left: 20px;
+    top: 30px;
+    border-color: #ffffff;
+    background: #ffffff;
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    color: #000000;
+  }
+  
+  .btn-beneficios-section-1:hover {
+    background: #a0be52;
+    color: #ffffff;
+  }
+  
+  .btn-beneficios-section-1:hover .rectangle-beneficios {
+    background: #ffffff;
+  }
+  
+  .btn-beneficios-section-2 {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    left: 20px;
+    top: 50px;
+    border-color: #ffffff;
+    background: #ffffff;
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    color: #000000;
+  }
 }

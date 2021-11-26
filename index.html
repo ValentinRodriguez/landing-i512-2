@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+  <script defer src="js/main.js"></script>
 
   <!-- owl carousel css -->
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -42,15 +43,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#Bases ">Bases</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#Ganadores">Ganadores</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#Pasantias">Pasantias</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link active" target="_blank"
               href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb">Aplicar
@@ -155,12 +153,13 @@
             <img class="img-seniora" src="./img/seniora.png" alt="" srcset="" />
             <img src="./img/cuadro-degradado.png" alt="" srcset="" />
           </div>
-          <p>El <strong>Fondo de Iniciativas Innovadoras en Educación</strong> es una propuesta de 
-          <strong>INICIA Educación</strong> que surge a partir del año 2017, y que hoy forma parte 
-          de la iniciativas gestionadas por el <strong>Instituto 512.</strong> El objetivo del Fondo consiste en 
-          generar y divulgar propuestas de innovación para la educación, creadas por docentes del 
-          sistema educativo nacional y que se nutren de la riqueza que se construye día a día 
-          dentro de las aulas dominicanas... </p>
+          <p>El <strong>Fondo de Iniciativas Innovadoras en Educación</strong> es una propuesta de
+            <strong>INICIA Educación</strong> que surge a partir del año 2017, y que hoy forma parte
+            de la iniciativas gestionadas por el <strong>Instituto 512.</strong> El objetivo del Fondo consiste en
+            generar y divulgar propuestas de innovación para la educación, creadas por docentes del
+            sistema educativo nacional y que se nutren de la riqueza que se construye día a día
+            dentro de las aulas dominicanas...
+          </p>
           <a class="btn-leer-mas" href="#">¡Leer más!</a>
         </div>
 
@@ -196,7 +195,7 @@
               </div>
             </div>
           </div>
-         
+
         </div>
 
         <div class="frame-info">
@@ -209,23 +208,26 @@
   <section class="section-padding separte-sec" id="Beneficios">
     <div class="container sub-container-beneficios">
       <div class="title-beneficios text-center">Beneficios</div>
-      <div class="row">
-        <div class="col-sm-7 col-md-7 col-lg-7 btn-container-beneficios">
-          <a class="btn-beneficios-section-1" onmouseover="hover(this,1);" onmouseout="unhover(this,1);">
-            <div class="col-sm-3 col-lg-3 col-md-3">
-              <div class="rectangle-beneficios" > 
-                <img src="./img/linea-3-avion-beneficios-section-white.png" class="img-line-3-beneficios" alt="" />
-                <img src="./img/linea-2-avion-beneficios-section-white.png" class="img-line-2-beneficios" alt="" />
-                <img src="./img/linea-1-avion-beneficios-section-white.png" class="img-line-1-beneficios" alt="" />
-                <img src="./img/avion-beneficios-section-white.png" class="img-avion-beneficios" alt="" />
+      <div class="row" style="margin-top: -0.5rem;">
+        <div class="col-sm-12 col-md-7 col-lg-7 btn-container-beneficios">
+          <a id="section-1" class="btn-beneficios-section-1 btn-beneficios-section-active"
+            onclick="clickBtnBeneficios(this,1)" onmouseover="hoverBtnBeneficios(this,1);"
+            onmouseout="unHoverBtnBeneficios(this,1);">
+            <div class="col-sm-2 col-lg-3 col-md-3">
+              <div class="rectangle-beneficios">
+                <img src="./img/linea-3-avion-beneficios-section-green.png" class="img-line-3-beneficios" alt="" />
+                <img src="./img/linea-2-avion-beneficios-section-green.png" class="img-line-2-beneficios" alt="" />
+                <img src="./img/linea-1-avion-beneficios-section-green.png" class="img-line-1-beneficios" alt="" />
+                <img src="./img/avion-beneficios-section-green.png" class="img-avion-beneficios" alt="" />
               </div>
             </div>
-            <div class="col-sm-9 col-lg-9 col-md-9">
+            <div class="col-sm-10 col-lg-9 col-md-9">
               Para el sistema Educativo
             </div>
           </a>
 
-          <a class="btn-beneficios-section-2" onmouseover="hover(this,2);" onmouseout="unhover(this,2);">
+          <a id="section-2" class="btn-beneficios-section-2" onclick="clickBtnBeneficios(this,2)"
+            onmouseover="hoverBtnBeneficios(this,2);" onmouseout="unHoverBtnBeneficios(this,2);">
             <div class="col-sm-3 col-lg-3 col-md-3">
               <div class="rectangle-beneficios">
                 <img src="./img/libro-beneficion-section-white.png" class="book-beneficios" alt="" />
@@ -242,26 +244,32 @@
               <div class="mini-rectangle-beneficios">
                 <img src="./img/check-beneficios-verde.png" class='img-check-beneficios' alt="">
               </div>
-              Asesoría técnica y el acompañamiento pedagógico.
+              <p>
+                Asesoría técnica y el acompañamiento pedagógico.
+              </p>
             </li>
             <li class="item-beneficios">
               <div class="mini-rectangle-beneficios">
                 <img src="./img/check-beneficios-verde.png" class='img-check-beneficios' alt="">
               </div>
-              Participación en experiencia pedagógica.
+              <p>
+                Participación en experiencia pedagógica.
+              </p>
             </li>
             <li class="item-beneficios">
               <div class="mini-rectangle-beneficios">
                 <img src="./img/check-beneficios-verde.png" class='img-check-beneficios' alt="">
               </div>
-              Publicación del proyecto y Diploma de Reconocimiento para los participantes.
+              <p>
+                Publicación del proyecto y Diploma de Reconocimiento para los participantes.
+              </p>
             </li>
             <li class="item-beneficios">
               <div class="mini-rectangle-beneficios">
                 <img src="./img/check-beneficios-verde.png" class='img-check-beneficios' alt="">
               </div>
-              Contribución máxima de US$2,000 atendiendo al
-              presupuesto inicial del proyecto.
+              <p> Contribución máxima de <strong>US$2,000</strong>
+                atendiendo al presupuesto inicial del proyecto.</p>
             </li>
           </ul>
         </div>
@@ -279,7 +287,7 @@
   <!-- ScrollIt js -->
   <script src="js/scrollIt.min.js"></script>
   <!-- main js -->
-  <script src="js/main.js"></script>
+ 
   <script>
     $(".card-grid").flip();
   </script>
