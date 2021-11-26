@@ -1,23 +1,15 @@
 /*----------------------- 
     fonts
 ------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 
 /*----------------------- 
     global css
 ------------------------*/
-/* :root {
-    --main-color: #1a5165;
-    --main-to-dark-color: var(--main-color);
-    --dark-to-main-color: var(--bg-dark);
-    --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
-    --black-900: #000000;
-    --black-400: #555555;
-    --black-100: #f7f7f7;
-    --black-000: #ffffff;
-    --black-alpha-100: rgba(0, 0, 0, 0.05);
-  } */
+:root {
+  --shadow-black-100: 0 5px 15px rgba(0,0,0,0.1);
+  --shadow-black-300: 0 5px 15px rgba(0,0,0,0.3);
+ }
 
   body {
     font-family: "Poppins", sans-serif;
@@ -97,6 +89,9 @@
   color: var(--color-3);
   animation: bounceTop_01 3s linear infinite;
 }
+.section-padding {
+  padding: 30px 0;
+}
   /*------------------------ 
       navbar
   ------------------------*/
@@ -105,6 +100,9 @@
     color: var(--main-color);
     padding: 20px 0;
     transition: all 0.5s ease;
+    box-shadow: -1px 12px 16px -3px rgba(77, 54, 54, 0.20);
+    -webkit-box-shadow: -1px 12px 16px -3px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: -1px 12px 16px -3px rgba(0, 0, 0, 0.20);
   }
   
   .navbar-btn {
@@ -115,14 +113,11 @@
   }
   
   .navbar-shrink {
-    background-color: var(--main-color);
-    box-shadow: -1px 12px 16px -3px rgba(0, 0, 0, 0.56);
-    -webkit-box-shadow: -1px 12px 16px -3px rgba(0, 0, 0, 0.56);
-    -moz-box-shadow: -1px 12px 16px -3px rgba(0, 0, 0, 0.56);
+    background-color: var(--main-color);    
   }
   
   .navbar .container #logo {
-    width: 20%;
+    width: 70%;
   }
   
   .navbar .nav-item i {
@@ -169,29 +164,40 @@
     justify-content: center;
     align-items: center;
   }
-  .navbar .nav-item .nav-link.active::before,
+.navbar .nav-item .nav-link.active::before,
 .navbar .nav-item .nav-link:hover::before {
     transform: scale(1);
 }
 
 .home {
     min-height: 100vh;
-    padding: 150px 0;
-    background-color: antiquewhite;
+    padding: 110px 0;
+    background-color: white;
     border-radius: 0 0 200px 0;
     position: relative;
     z-index: 1;
 }
 
 .container .home-text  {
-  width: 70%;
+  width: 70%;  
+}
+
+.home-text-container {
+  position: relative;
+}
+
+.home-text-container .flecha-stroke-r {
+  position: absolute;
+  right: 85px;
+  width: 27%;
+  top: 75px;
 }
 
 .home-text h1{
-    font-size: 70px;
+    font-size: 35px;
     font-weight: 700;
     color: #070606;
-    margin: 0 0 20px;
+    margin: 30px 0 20px;
 }
 
 .container .home-text input {
@@ -210,7 +216,11 @@
 }
 
 .home .home-btn{
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+.home .home-btn img {
+  cursor: pointer;
 }
 
 .home .home-btn .video-play-btn{
@@ -232,17 +242,16 @@
     box-shadow: var(--shadow-black-300);
 }
 .home-text p{
-    font-size: 18px;
-    line-height: 28px;
-    color: #161414;
-    margin: 0;
-    font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  /* color: #161414; */
+  margin: 0;
+  font-weight: 500;
 }
 
 .container .home-img .logo-home{
     /* max-width: 250px; */
-    width: 100%;
-    box-shadow: var(--shadow-black-100);
+    width: 70%;
     border-radius: 32px;
     /* animation: bounceTop_01 3s ease infinite; */
 }
@@ -255,10 +264,53 @@
 .home-img
 .avion-azul {
   position: absolute;
-  width: 185px;
-  transform: rotate(15deg);
-  bottom: -100px;
-  right: -52px;
+    width: 100px;
+    transform: rotate(3deg);
+    bottom: -40px;
+    right: 32px;
+}
+
+.container
+.home-img
+.avion-azul-f {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.container
+.home-img
+.circulo-f {
+  position: absolute;
+}
+
+.container
+.home-img
+.dado {
+  width: 120px;
+  position: absolute;
+  top: 5%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  animation: bounceTop_01 3s linear infinite;
+}
+
+.container
+.home-img
+.frame512{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+}
+
+.container
+.home-img
+.frame2{
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 13%;
 }
 
 .home-img .circle {
@@ -273,16 +325,12 @@
     transform: translate(-50%, -50%);
 }
 
-.home-img .circle:before {
-    content: '';
-    position: absolute;
-    height: 92px;
-    width: 146px;
-    background-image: url('../img/avion-rosa.png');
-    /* border-radius: 50%; */
-    left: -96px;
-    top: -64px;
-    transform-origin: 170px 170px;
+.home-img .avion-rosa {
+    position: absolute;   
+    left: 30px;
+    top: 10px;
+    /* transform-origin: 170px 170px; */
+    transform: rotate(-30deg);
     /* animation: spin_01 10S linear infinite; */
 }
 
@@ -355,4 +403,100 @@ Video POPUP
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+.convocatoria-sec {
+  position: relative;
+}
+
+.group42,
+.group49,
+.flecha-toon,
+.cola-av-am,
+.avion-amarillo {
+  position: absolute;
+}
+
+.group49 {
+  top: -42px;
+  left: 0;
+}
+
+.avion-amarillo {
+  right: 12px;
+  top: 8px;
+}
+
+.cola-av-am {
+  right: -10px;
+  top: -7px;
+}
+
+.group42 {
+  right: -11px;
+  bottom: -39px;
+}
+
+.flecha-toon {
+  right: 51%;
+  bottom: 24%;
+}
+
+.container-conv .sub-container-conv {
+  padding: 40px;
+}
+
+.info {
+  width: 210px;
+  margin-bottom: 34px;
+}
+
+.btn-aplicar {
+  background-color: #DA4A93;
+  color: white;
+  border-radius: 12px;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  font-size: 14px;
+  box-shadow: -1px 0px 5px 0px rgba(218,74,147,0.75);
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(218,74,147,0.75);
+  -moz-box-shadow: -1px 0px 5px 0px rgba(218,74,147,0.75);
+}
+
+.btn-leer-mas {
+  background-color: #95CBEE;
+  color: white;
+  border-radius: 12px;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  font-size: 14px;
+  box-shadow: -1px 0px 5px 0px rgba(149,203,238,0.75);
+  -webkit-box-shadow: -1px 0px 5px 0px rgba(149,203,238,0.75);
+  -moz-box-shadow: -1px 0px 5px 0px rgba(149,203,238,0.75);
+}
+
+
+.container-conv {
+  box-shadow: var(--shadow-black-100);
+    border-radius: 35px;
+}
+
+.text-center h4 {
+  font-weight: bold;
+}
+
+.sub-container-separte-sec{
+  background: rgba(149, 203, 238, 0.08);
+border-radius: 15.7018px;
+/* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+
+.img-seniora {
+  position: absolute;
 }
