@@ -61,36 +61,70 @@ function hasClass(element, className) {
     return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
 }
 
-const transformBtnBeneficiosCometaIconToGreenHandler = () => {
-    const element1 = document.getElementsByClassName('img-line-1-beneficios');
+const transformBtnBeneficiosCometaIconToGreenHandler = (isMobile) => {
+    if (!isMobile) {
+        const element1 = document.getElementsByClassName('img-line-1-beneficios');
+        element1[0].setAttribute('src', 'img/linea-1-avion-beneficios-section-green.png');
+        const element2 = document.getElementsByClassName('img-line-2-beneficios');
+        element2[0].setAttribute('src', 'img/linea-2-avion-beneficios-section-green.png');
+        const element3 = document.getElementsByClassName('img-line-3-beneficios');
+        element3[0].setAttribute('src', 'img/linea-3-avion-beneficios-section-green.png');
+        const element4 = document.getElementsByClassName('img-avion-beneficios');
+        element4[0].setAttribute('src', 'img/avion-beneficios-section-green.png');
+        return;
+    }
+
+    const element1 = document.getElementsByClassName('img-line-1-beneficios-mobile');
     element1[0].setAttribute('src', 'img/linea-1-avion-beneficios-section-green.png');
-    const element2 = document.getElementsByClassName('img-line-2-beneficios');
+    const element2 = document.getElementsByClassName('img-line-2-beneficios-mobile');
     element2[0].setAttribute('src', 'img/linea-2-avion-beneficios-section-green.png');
-    const element3 = document.getElementsByClassName('img-line-3-beneficios');
+    const element3 = document.getElementsByClassName('img-line-3-beneficios-mobile');
     element3[0].setAttribute('src', 'img/linea-3-avion-beneficios-section-green.png');
-    const element4 = document.getElementsByClassName('img-avion-beneficios');
+    const element4 = document.getElementsByClassName('img-avion-beneficios-mobile');
     element4[0].setAttribute('src', 'img/avion-beneficios-section-green.png');
 }
 
-const transformBtnBeneficiosCometaIconToWhitenHandler = () => {
-    const element1 = document.getElementsByClassName('img-line-1-beneficios');
+const transformBtnBeneficiosCometaIconToWhitenHandler = (isMobile) => {
+    if (!isMobile) {
+        const element1 = document.getElementsByClassName('img-line-1-beneficios');
+        element1[0].setAttribute('src', 'img/linea-1-avion-beneficios-section-white.png');
+        const element2 = document.getElementsByClassName('img-line-2-beneficios');
+        element2[0].setAttribute('src', 'img/linea-2-avion-beneficios-section-white.png');
+        const element3 = document.getElementsByClassName('img-line-3-beneficios');
+        element3[0].setAttribute('src', 'img/linea-3-avion-beneficios-section-white.png');
+        const element4 = document.getElementsByClassName('img-avion-beneficios');
+        element4[0].setAttribute('src', 'img/avion-beneficios-section-white.png');
+        return;
+    }
+    //mobile section
+    const element1 = document.getElementsByClassName('img-line-1-beneficios-mobile');
     element1[0].setAttribute('src', 'img/linea-1-avion-beneficios-section-white.png');
-    const element2 = document.getElementsByClassName('img-line-2-beneficios');
+    const element2 = document.getElementsByClassName('img-line-2-beneficios-mobile');
     element2[0].setAttribute('src', 'img/linea-2-avion-beneficios-section-white.png');
-    const element3 = document.getElementsByClassName('img-line-3-beneficios');
+    const element3 = document.getElementsByClassName('img-line-3-beneficios-mobile');
     element3[0].setAttribute('src', 'img/linea-3-avion-beneficios-section-white.png');
-    const element4 = document.getElementsByClassName('img-avion-beneficios');
+    const element4 = document.getElementsByClassName('img-avion-beneficios-mobile');
     element4[0].setAttribute('src', 'img/avion-beneficios-section-white.png');
 }
 
-const transformBtnBeneficiosBookIconToGreenHandler = () => {
-    const element1 = document.getElementsByClassName('book-beneficios');
+const transformBtnBeneficiosBookIconToGreenHandler = (isMobile) => {
+    if (!isMobile) {
+        const element1 = document.getElementsByClassName('book-beneficios');
+        element1[0].setAttribute('src', 'img/libro-beneficion-section-green.png');
+        return;
+    }
+    const element1 = document.getElementsByClassName('book-beneficios-mobile');
     element1[0].setAttribute('src', 'img/libro-beneficion-section-green.png');
 }
 
-const transformBtnBeneficiosBookIconToWhiteHandler = () => {
-    const element1 = document.getElementsByClassName('book-beneficios');
-    element1[0].setAttribute('src', 'img/libro-beneficion-section-green.png');
+const transformBtnBeneficiosBookIconToWhiteHandler = (isMobile) => {
+    if (!isMobile) {
+        const element1 = document.getElementsByClassName('book-beneficios');
+        element1[0].setAttribute('src', 'img/libro-beneficion-section-white.png');
+        return;
+    }
+    const element1 = document.getElementsByClassName('book-beneficios-mobile');
+    element1[0].setAttribute('src', 'img/libro-beneficion-section-white.png');
 }
 
 const hoverBtnBeneficios = (element, section) => {
@@ -111,7 +145,7 @@ const unHoverBtnBeneficios = (element, section) => {
     if (section == 1) {
         transformBtnBeneficiosCometaIconToWhitenHandler();
     } else if (section == 2) {
-        transformBtnBeneficiosBookIconToGreenHandler();
+        transformBtnBeneficiosBookIconToWhiteHandler();
     }
 }
 
@@ -139,17 +173,42 @@ const clickBtnBeneficios = (element, section) => {
         element.classList.add('btn-beneficios-section-active');
         transformBtnBeneficiosCometaIconToGreenHandler();
 
-        transformBtnBeneficiosBookIconToGreenHandler();
+        transformBtnBeneficiosBookIconToWhiteHandler();
     } else if (section == 2) {
         element.classList.add('btn-beneficios-section-active');
         const btnSection1 = document.getElementById('section-1')
         btnSection1.classList.remove('btn-beneficios-section-active');
         transformBtnBeneficiosCometaIconToWhitenHandler();
 
-        transformBtnBeneficiosBookIconToWhiteHandler();
+        transformBtnBeneficiosBookIconToGreenHandler();
     }
 
     populateListItems(section);
 
 }
+
+const clickBtnBeneficiosMobile = (element, section) => {
+    if (section == 1) {
+        element.classList.add('btn-beneficios-section-active');
+        const btnSection2 = document.getElementById('section-2-mobile')
+        btnSection2.classList.remove('btn-beneficios-section-active');
+        transformBtnBeneficiosCometaIconToGreenHandler(true);
+
+        transformBtnBeneficiosBookIconToWhiteHandler(true);
+    } else if (section == 2) {
+        element.classList.add('btn-beneficios-section-active');
+        const btnSection1 = document.getElementById('section-1-mobile')
+        btnSection1.classList.remove('btn-beneficios-section-active');
+        transformBtnBeneficiosCometaIconToWhitenHandler(true);
+
+        transformBtnBeneficiosBookIconToGreenHandler(true);
+    }
+
+}
+
+
+$(document).ready(function(){
+    $('.sub-container-beneficios-mobile').height($('.sub-container-beneficios-mobile').height() + 80);
+});
+
 // SECCION DE BENEFICIOS
