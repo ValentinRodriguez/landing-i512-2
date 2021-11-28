@@ -24,8 +24,9 @@ $(document).ready(function () {
 
     //CAROUSEL FEATURES
     $('.features-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
+        // loop: true,
+        margin: 1,
+        nav:false,
         responsiveClass: true,
         responsive: {
             // breakpoint from 0 up
@@ -33,16 +34,27 @@ $(document).ready(function () {
                 items: 1,
             },
             // breakpoint from 480 up
-            600: {
+            480: {
                 items: 2,
             },
             // breakpoint from 768 up
-            1000: {
+            768: {
                 items: 3,
             }
         }
     });
 
+    document.querySelectorAll('.ganadores-sec .container ul li').forEach(li => {       
+        li.addEventListener('click', function (e) {
+            console.log(e.path);
+            if ($(this).hasClass("active")) {
+                return
+            } else {
+                $(".ganadores-sec .container ul li").removeClass("active");
+                $($(this)).addClass("active");
+            }
+        });
+    });
 })
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
