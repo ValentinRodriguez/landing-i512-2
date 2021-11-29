@@ -91,6 +91,10 @@ $(document).ready(function () {
         owl.trigger('next.owl.carousel');
     })
     
+    $('.goup').click(function () {
+        $('html, body').animate({scrollTop:0}, '300');
+    })
+
     document.querySelectorAll('.ganadores-sec .container ul li').forEach(li => {       
         li.addEventListener('click', function (e) {
             console.log(e.path);
