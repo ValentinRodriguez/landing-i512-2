@@ -13,11 +13,53 @@ $(document).ready(function () {
     $(".video-play-btn, .video-popup").on("click", function () {
         if ($(".video-popup").hasClass("open")) {
             $(".video-popup").removeClass("open");
-            $("#player-1").attr("src", "")
+            // $("#player-1").attr("src", "")
         } else {
             $(".video-popup").addClass("open");
             if ($("#player-1").attr("src") == "") {
                 $("#player-1").attr("src", "videoSrc")
+            }
+        }
+    })
+
+    // VIDEO POPUP
+    const videoSrc2 = $("#player-2").attr("src");
+    $(".video-play-btn-2, .video-popup-2").on("click", function () {
+        if ($(".video-popup-2").hasClass("open")) {
+            $(".video-popup-2").removeClass("open");
+            // $("#player-2").attr("src", "")
+        } else {
+            $(".video-popup-2").addClass("open");
+            if ($("#player-2").attr("src") == "") {
+                $("#player-2").attr("src", "videoSrc2")
+            }
+        }
+    })
+
+    // VIDEO POPUP
+    const videoSrc3 = $("#player-3").attr("src");
+    $(".video-play-btn-3, .video-popup-3").on("click", function () {
+        if ($(".video-popup-3").hasClass("open")) {
+            $(".video-popup-3").removeClass("open");
+            // $("#player-3").attr("src", "")
+        } else {
+            $(".video-popup-3").addClass("open");
+            if ($("#player-3").attr("src") == "") {
+                $("#player-3").attr("src", "videoSrc3")
+            }
+        }
+    })
+
+    // VIDEO POPUP
+    const videoSrc4 = $("#player-4").attr("src");
+    $(".video-play-btn-4, .video-popup-4").on("click", function () {
+        if ($(".video-popup-4").hasClass("open")) {
+            $(".video-popup-4").removeClass("open");
+            // $("#player-4").attr("src", "")
+        } else {
+            $(".video-popup-4").addClass("open");
+            if ($("#player-4").attr("src") == "") {
+                $("#player-4").attr("src", "videoSrc4")
             }
         }
     })
@@ -44,6 +86,11 @@ $(document).ready(function () {
         }
     });
 
+    var owl = $('.owl-carousel');
+    $('#customNextBtn').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
+    
     document.querySelectorAll('.ganadores-sec .container ul li').forEach(li => {       
         li.addEventListener('click', function (e) {
             console.log(e.path);
@@ -54,6 +101,18 @@ $(document).ready(function () {
                 $($(this)).addClass("active");
             }
         });
+    });
+
+    $( ".btn-leer-mas" ).click(function() {
+        $( ".leer-content" ).slideToggle( "fast" );
+            var $this = $(this);
+            $( ".content" ).toggleClass("open");
+                $this.toggleClass("open");
+                if ($this.hasClass("open")) {
+                    $this.html("Regresar");
+                } else {
+                    $this.html("Leer más");
+                }
     });
 })
 
