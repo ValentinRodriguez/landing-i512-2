@@ -145,6 +145,7 @@ ul {
   color: #ffffff;
   font-weight: 500;
   text-transform: capitalize;
+  margin-left: 10px;
 }
 
 .navbar .nav-item {
@@ -182,17 +183,17 @@ ul {
 }
 
 .home {
-  min-height: 100vh;
+  min-height: 40vh;
   /* padding: 110px 0; */
   background-color: white;
   border-radius: 0 0 200px 0;
   position: relative;
-  margin-top: 100px;
+  margin-top: 130px;
   z-index: 1;
 }
 
 .container .home-text {
-  width: 70%;
+  width: 65%;
 }
 
 .home-text-container {
@@ -270,13 +271,6 @@ ul {
   /* color: #161414; */
   margin: 0;
   font-weight: 500;
-}
-
-.container .home-img .logo-home {
-  /* max-width: 250px; */
-  width: 70%;
-  border-radius: 32px;
-  /* animation: bounceTop_01 3s ease infinite; */
 }
 
 .container .home-img {
@@ -531,6 +525,8 @@ Video POPUP
   border-radius: 12px;
   width: 10rem;
   display: flex;
+  border-color: #95cbee;
+  text-align: center;
   justify-content: center;
   align-items: center;
   height: 37px;
@@ -918,6 +914,10 @@ mobile-section-beneficios-displey-2 {
   align-items: center;
 }
 
+.btn-aplicar-2 {
+  display: none;
+}
+
 @media (min-width: 992px) {
   /* NAVBAR */  
   .navbar .container #logo {
@@ -926,10 +926,17 @@ mobile-section-beneficios-displey-2 {
 
   /* PORTADA */
   .home {
-    margin-top: 0;
-    min-height: 79vh;
+    margin-top: 87px;
+    min-height: 62vh;
   }
 
+  .container .home-img .logo-home {
+    width: 100%;
+    border-radius: 32px;
+  }
+
+  
+  .publicaciones-sec-mobile,
   .text-center-mobile,
   .timelime-sec-mobile,
   .separte-sec-mobile,
@@ -1029,13 +1036,38 @@ mobile-section-beneficios-displey-2 {
   .icon-container img{
     width: 40px;
   }
+
+  .publicaciones-sec .download {
+    position: absolute;
+    bottom: 37px;
+    right: 100px;
+    width: 110px !important;
+  }
+
+  .timelime-sec-desktop{
+    max-width: 1207px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 991px) {
 
+  .container .home-img .logo-home {
+    width: 70%;
+    border-radius: 32px;
+  }
+  
   .img-seniora{
     width: 60%;    
   }
+
+  .flecha-toon {
+    bottom: 24%;
+    left: 200px;
+    width: 50px;
+  }
+
+  .publicaciones-sec-desktop,
   .text-center-desktop,
   .timelime-sec-desktop,
   .btn-aplicar-2,
@@ -1052,6 +1084,18 @@ mobile-section-beneficios-displey-2 {
 
   .pasantias-sec .sub-container-pasantias-sec ul li {
     margin-left: 35px;
+  }
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 87%;
+  }
+
+  .publicaciones-sec .download {
+    position: absolute;
+    bottom: 30px;
+    right: 110px;
+    width: 65px !important;
   }
 
   .mobile-only {
@@ -1189,6 +1233,7 @@ mobile-section-beneficios-displey-2 {
     width: 100%;
     height: 450px;
     background-size: cover;
+    overflow: hidden;
   }
 
   .footer-section-1 {
@@ -1318,7 +1363,7 @@ section.section-padding.timelime-sec > img:nth-child(5) {
 
 .row-next {
   position: absolute;
-  top: 11px;
+  top: 25px;
   right: 20px;
   width: 40px !important;
 }
@@ -1357,7 +1402,7 @@ h5 {
 .pasantias-sec .video-play-btn-3 {
   position: absolute;
   top: 50%;
-  right: 38%;
+  right: 45%;
   cursor: pointer;
   border-radius: 50%;
   animation: pulse_01 2s ease infinite;
@@ -1374,13 +1419,6 @@ h5 {
   background: rgba(255, 213, 76, 0.08);
   width: 90%;
   border-radius: 15.614px;
-}
-
-.publicaciones-sec .download {
-  position: absolute;
-  bottom: 30px;
-  right: 110px;
-  width: 65px !important;
 }
 
 .publicaciones-sec > div > div > div > div > h4 {

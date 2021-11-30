@@ -118,6 +118,13 @@ $(document).ready(function () {
                     $this.html("Leer más");
                 }
     });
+
+    setTimeout(() => {
+        $( "#dots2 > button:nth-child(1)" ).append( "<p>1era edición</p>" );
+        $( "#dots2 > button:nth-child(2)" ).append( "<p>2da edición</p>" );
+        $( "#dots2 > button:nth-child(3)" ).append( "<p>3era edición</p>" );
+        $( "#dots2 > button:nth-child(4)" ).append( "<p>4ta edición</p>" );
+    }, 1000);
 })
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
