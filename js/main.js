@@ -176,7 +176,7 @@ $(document).ready(function () {
     }
     const createGanadores = document.getElementById('ganadores-container')
     createGanadores.innerHTML = '';
-    ganadores['Primera-Edicion'].forEach(ganador => {
+    ganadores['Primera-Edicion'].forEach((ganador, index) => {
         createGanadores.innerHTML += `
         <div class="ganadores-card">
             <div class='ganadores-card-header'>
@@ -184,7 +184,9 @@ $(document).ready(function () {
                     ${ganador.title}
                 </div>
                 <div class='ganadores-open-card'>
-                    <img src='./img/ganadores-open-card/Boton/arrow.png' alt="">
+                    <a id='Primera-Edicion-1-1' onclick={expandGanadores('${index}',this,'Primera-Edicion-${index}')}>
+                        <img src='./img/ganadores-open-card/Boton/arrow.png' alt="">
+                    </a>
                 </div>
             </div>
             <div class='ganadores-card-body' style='background: url(${ganador.imgRoute}) no-repeat bottom,url("./img/fondo-cards.png") no-repeat bottom '></div>
@@ -411,8 +413,47 @@ const limpiarGanadores = () => {
     }
 }
 
-const expandGanadores = (ganadores) => {
-    console.log(ganadores);
+const expandGanadores = (index, el, id) => {
+    if (index == 0) {
+        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_biblioteca_virtual.pdf')
+        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
+        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
+        document.getElementById('ganadores-modal-p').innerHTML = `
+    <strong>Elaborado por:</strong>
+    María Alejandra Ureña
+    Socorro Méndez
+    Erik Flores
+    <strong>Politécnico Manuel Acevedo Serrano</strong>`;
+    }
+
+    if (index == 1) {
+        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_fomento_creatividad.pdf')
+        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-2.png')
+        document.getElementById('ganadores-modal-p').innerHTML = `
+        <strong>Elaborado por:</strong> 
+        Yaneris Carrasco
+Marcily Montás
+        <strong>Instituto Politécnico Hainamosa</strong>`;
+
+    }
+
+    if (index == 2) {
+        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_innovacion_matematica.pdf')
+        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-3.png')
+        document.getElementById('ganadores-modal-p').innerHTML = `
+        <strong>Elaborado por:</strong>
+        Waly Rodríguez
+
+        <strong>Politécnico El Ave María </strong>`;
+
+    }
+
+    new Modal(
+        // Grab the modal element
+        document.querySelector('.modal'),
+        // Grab the element that triggers the modal
+        el
+    );
 }
 
 const onClickGanadores = (edicion) => {
@@ -422,14 +463,14 @@ const onClickGanadores = (edicion) => {
 
     document.getElementById(edicion).classList.add('ganadores-options-active');
 
-    ganadores[edicion].forEach(ganador => {
+    ganadores[edicion].forEach((ganador, index) => {
         createGanadores.innerHTML += `
-        <div class="ganadores-card">
+        <div class="ganadores-card" id='${edicion}-${index}'>
             <div class='ganadores-card-header'>
                 <div class='ganadores-card-header-title'>
                     ${ganador.title}
                 </div>
-                ${edicion == 'Primera-Edicion' ? `<div class='ganadores-open-card' onclick={expandGanadores(this)}>
+                ${edicion == 'Primera-Edicion' ? `<div class='ganadores-open-card' onclick={expandGanadores('${index}',this,'${edicion}-${index}')}>
                     <img src='./img/ganadores-open-card/Boton/arrow.png' alt="">
                 </div>` : ''}   
             </div>
@@ -437,6 +478,47 @@ const onClickGanadores = (edicion) => {
         </div>
     `
     })
+}
+
+class Modal {
+    constructor(modal, target) {
+        this.isOpen = false;
+        this.modal = modal;
+        this.target = target;
+        this.closeModal = modal.querySelectorAll('[data-close]');
+
+        this.target.addEventListener("click", (e) => {
+            if (this.isOpen) {
+                return this.close();
+            }
+            return this.open();
+        });
+        this.closeModal.forEach(item => {
+            item.addEventListener("click", (e) => {
+                this.close();
+            });
+        });
+
+    }
+
+    animateIn() {
+        this.modal.classList.add('animate-modal');
+    }
+    animateOut() {
+        this.modal.classList.remove('animate-modal');
+    }
+    open() {
+        this.modal.classList.add('show-modal');
+        setTimeout(() => {
+            this.animateIn();
+        }, 10);
+    }
+    close() {
+        this.animateOut();
+        setTimeout(() => {
+            this.modal.classList.remove('show-modal');
+        }, 250);
+    }
 }
 
 //Ganadores end
