@@ -1,3 +1,52 @@
+
+    const ganadores = {
+        'Primera-Edicion': [{
+            title: 'Biblioteca Virtual',
+            imgRoute: './img/ganadores-1-1.png'
+        }, {
+            title: 'Fomento de la lectura con la Creatividad',
+            imgRoute: './img/ganadores-1-2.png'
+        }, {
+            title: 'Innovación y Diversificación de las Matemáticas',
+            imgRoute: './img/ganadores-1-3.png'
+        },
+        {
+            title: 'Invernadero Escolar',
+            imgRoute: './img/ganadores-1-4.png'
+        }],
+        'Segunda-Edicion': [{
+            title: 'Mira lo que Aprendí',
+            imgRoute: './img/ganadores-2-1.png'
+        }, {
+            title: 'Variabilidad Genética y Crianza de Conejos',
+            imgRoute: './img/ganadores-2-2.png'
+        }],
+        'Tercera-Edicion': [{
+            title: 'CEN Makerspace',
+            imgRoute: './img/ganadores-3-1.png'
+        }, {
+            title: 'CQL: Cálculo de la química para la limpieza',
+            imgRoute: './img/ganadores-3-2.png'
+        }, {
+            title: 'LUDUM',
+            imgRoute: './img/ganadores-3-4.png'
+        }],
+        'Cuarta-Edicion': [{
+            title: 'Proyecto DRON',
+            imgRoute: './img/ganadores-4-1.png'
+        }, {
+            title: 'La Meteorología en la Educación',
+            imgRoute: './img/ganadores-4-2.png'
+        }, {
+            title: 'Techos Acuapónicos',
+            imgRoute: './img/ganadores-4-3.png'
+        },
+        {
+            title: 'Guía Metodológica',
+            imgRoute: './img/ganadores-4-4.png'
+        }]
+    }
+
 $(document).ready(function () {
     // SCROLL
     $(window).on("scroll", function () {
@@ -135,45 +184,6 @@ $(document).ready(function () {
         $("#dots2 > button:nth-child(4)").append("<p>4ta edición</p>");
     }, 1000);
 
-    const ganadores = {
-        'Primera-Edicion': [{
-            title: 'Biblioteca Virtual',
-            imgRoute: './img/ganadores-1-1.png'
-        }, {
-            title: 'Fomento de la lectura con la Creatividad',
-            imgRoute: './img/ganadores-1-2.png'
-        }, {
-            title: 'Innovación y Diversificación de las Matemáticas',
-            imgRoute: './img/ganadores-1-3.png'
-        }],
-        'Segunda-Edicion': [{
-            title: 'Mira lo que Aprendí',
-            imgRoute: './img/ganadores-2-1.png'
-        }, {
-            title: 'Variabilidad Genética y Crianza de Conejos',
-            imgRoute: './img/ganadores-2-2.png'
-        }],
-        'Tercera-Edicion': [{
-            title: 'CEN Makerspace',
-            imgRoute: './img/ganadores-3-1.png'
-        }, {
-            title: 'CQL: Cálculo de la química para la limpieza',
-            imgRoute: './img/ganadores-3-2.png'
-        }, {
-            title: 'LUDUM',
-            imgRoute: './img/ganadores-3-4.png'
-        }],
-        'Cuarta-Edicion': [{
-            title: 'Proyecto DRON',
-            imgRoute: './img/ganadores-4-1.png'
-        }, {
-            title: 'La Meteorología en la Educación',
-            imgRoute: './img/ganadores-4-2.png'
-        }, {
-            title: 'Techos Acuapónicos',
-            imgRoute: './img/ganadores-4-3.png'
-        }]
-    }
     const createGanadores = document.getElementById('ganadores-container')
     createGanadores.innerHTML = '';
     ganadores['Primera-Edicion'].forEach((ganador, index) => {
@@ -184,12 +194,12 @@ $(document).ready(function () {
                     ${ganador.title}
                 </div>
                 <div class='ganadores-open-card'>
-                    <a id='Primera-Edicion-1-1' onclick={expandGanadores('${index}',this,'Primera-Edicion-${index}')}>
+                    <a id='Primera-Edicion-1-1' onclick={expandGanadores('${index}','Primera-Edicion',this)}>
                         <img src='./img/ganadores-open-card/Boton/arrow.png' alt="">
                     </a>
                 </div>
             </div>
-            <div class='ganadores-card-body' style='background: url(${ganador.imgRoute}) no-repeat bottom,url("./img/fondo-cards.png") no-repeat bottom '></div>
+            <div class='ganadores-card-body' style=' border-radius: 20px;background:url(${ganador.imgRoute}) no-repeat bottom,url("./img/fondo-cards.png") no-repeat bottom '></div>
         </div>
     `
     })
@@ -366,46 +376,6 @@ $(document).ready(function () {
 
 //Ganadores start
 
-const ganadores = {
-    'Primera-Edicion': [{
-        title: 'Biblioteca Virtual',
-        imgRoute: './img/ganadores-1-1.png'
-    }, {
-        title: 'Fomento de la lectura con la Creatividad',
-        imgRoute: './img/ganadores-1-2.png'
-    }, {
-        title: 'Innovación y Diversificación de las Matemáticas',
-        imgRoute: './img/ganadores-1-3.png'
-    }],
-    'Segunda-Edicion': [{
-        title: 'Mira lo que Aprendí',
-        imgRoute: './img/ganadores-2-1.png'
-    }, {
-        title: 'Variabilidad Genética y Crianza de Conejos',
-        imgRoute: './img/ganadores-2-2.png'
-    }],
-    'Tercera-Edicion': [{
-        title: 'CEN Makerspace',
-        imgRoute: './img/ganadores-3-1.png'
-    }, {
-        title: 'CQL: Cálculo de la química para la limpieza',
-        imgRoute: './img/ganadores-3-2.png'
-    }, {
-        title: 'LUDUM',
-        imgRoute: './img/ganadores-3-4.png'
-    }],
-    'Cuarta-Edicion': [{
-        title: 'Proyecto DRON',
-        imgRoute: './img/ganadores-4-1.png'
-    }, {
-        title: 'La Meteorología en la Educación',
-        imgRoute: './img/ganadores-4-2.png'
-    }, {
-        title: 'Techos Acuapónicos',
-        imgRoute: './img/ganadores-4-3.png'
-    }]
-}
-
 const limpiarGanadores = () => {
     const ganadoresContainer = document.getElementsByClassName('ganadores-options');
     for (let i = 0; i < ganadoresContainer.length; i++) {
@@ -413,47 +383,120 @@ const limpiarGanadores = () => {
     }
 }
 
-const expandGanadores = (index, el, id) => {
-    if (index == 0) {
-        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_biblioteca_virtual.pdf')
-        document.getElementById('ganadores-1-1').setAttribute('src', './videos/principal.mp4')
-        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
-        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
-        document.getElementById('ganadores-modal-p').innerHTML = `
+const expandGanadores = (index, el, element) => {
+    if (el == 'Primera-Edicion') {
+        if (index == 0) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_biblioteca_virtual.pdf')
+            document.getElementById('ganadores-1-1').setAttribute('src', './videos/principal.mp4')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
     <strong>Elaborado por:</strong>
     María Alejandra Ureña
     Socorro Méndez
     Erik Flores
     <strong>Politécnico Manuel Acevedo Serrano</strong>`;
-    }
+        }
 
-    if (index == 1) {
-        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_fomento_creatividad.pdf')
-        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-2.png')
-        document.getElementById('ganadores-modal-p').innerHTML = `
+        if (index == 1) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_fomento_creatividad.pdf')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-2.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
         <strong>Elaborado por:</strong> 
         Yaneris Carrasco
 Marcily Montás
         <strong>Instituto Politécnico Hainamosa</strong>`;
 
-    }
+        }
 
-    if (index == 2) {
-        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_innovacion_matematica.pdf')
-        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-3.png')
-        document.getElementById('ganadores-modal-p').innerHTML = `
+        if (index == 2) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_innovacion_matematica.pdf')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-3.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
         <strong>Elaborado por:</strong>
         Waly Rodríguez
 
         <strong>Politécnico El Ave María </strong>`;
 
+        }
+
+        if (index == 3) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/IE.pdf')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-4.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
+        <strong>Elaborado por:</strong>
+        Dorka Contreras
+Laura Corporán
+Martha Vicioso
+        <strong>Politécnico San José (S.D.)</strong>`;
+
+        }
     }
 
+    if (el == 'Segunda-Edicion') {
+        if (index == 0) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/MLQA.pdf')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-2-1.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
+                    <strong>Elaborado por:</strong>
+                    Sely Perdomo
+                    Juana Méndez
+                    Katty Tejada
+                    <strong>Politécnico San José (Santo Domingo)</strong>`;
+        }
+
+        if (index == 1) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/VG.pdf')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-2-2.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
+                    <strong>Elaborado por:</strong> 
+                    Ángel Cuevas
+                    <strong>Liceo Científico Dr. Miguel Canela Lázaro (Hermanas Mirabal)</strong>`;
+
+        }
+    }
+
+    if (el == 'Tercera-Edicion') {
+        if (index == 0) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/CEN.pdf')
+            document.getElementById('ganadores-1-1').setAttribute('src', './videos/principal.mp4')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-3-1.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
+    <strong>Elaborado por:</strong>
+    Rafel Espín
+Hilda Karina Abreu
+    <strong>Colegio Escuela Nueva (Santo Domingo)</strong>`;
+        }
+
+        if (index == 1) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/CQL.pdf')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-3-2.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
+        <strong>Elaborado por:</strong> 
+        Junior Radhamés Sánchez Vásquez
+Ángela María Díaz Díaz
+        <strong>Instituto Agronómico y Técnico Salesiano (La Vega)</strong>`;
+
+        }
+
+        if (index == 2) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/LUDUM.pdf')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-3-4.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
+        <strong>Elaborado por:</strong>
+        Mariela Polanco Polanco
+        Brenda Batista Rosario
+        Eliana Francisco Cuello        
+        <strong>Instituto Politécnico María de la Altagracia de Villa Duarte (Santo Domingo)</strong>`;
+
+        }
+
+    }
     new Modal(
         // Grab the modal element
         document.querySelector('.modal'),
         // Grab the element that triggers the modal
-        el
+        element
     );
 }
 
@@ -471,11 +514,11 @@ const onClickGanadores = (edicion) => {
                 <div class='ganadores-card-header-title'>
                     ${ganador.title}
                 </div>
-                ${edicion == 'Primera-Edicion' ? `<div class='ganadores-open-card' onclick={expandGanadores('${index}',this,'${edicion}-${index}')}>
+                ${edicion != 'Cuarta-Edicion' ? `<div class='ganadores-open-card' onclick={expandGanadores('${index}','${edicion}',this)}>
                     <img src='./img/ganadores-open-card/Boton/arrow.png' alt="">
                 </div>` : ''}   
             </div>
-            <div class='ganadores-card-body' style='background: url(${ganador.imgRoute}) no-repeat bottom,url("./img/fondo-cards.png") no-repeat bottom '></div>
+            <div class='ganadores-card-body' style='border-radius: 20px;background: url(${ganador.imgRoute}) no-repeat bottom,url("./img/fondo-cards.png") no-repeat bottom;'></div>
         </div>
     `
     })
