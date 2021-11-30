@@ -6,11 +6,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
   <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
   <script defer src="js/main.js"></script>
 
@@ -22,109 +22,102 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/glider.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
   <!-- start navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <!-- Brand -->
-      <a class="navbar-brand" href="index.html"><img src="./img/logo.png" id="logo" alt="" srcset="" /></a>
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html"><img src="./img/logo.png" id="logo" alt="" srcset="" /></a>
 
-      <!-- Toggler/collapsibe Button -->
-      <button id="toggle" class="navbar-toggler" type="button">
-        <!-- <span class="fas fa-bars fa-icon"></span> -->
-        <img src="./img/icono-menu.png" alt="" srcset="" />
-      </button>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <img src="./img/icono-menu.png" alt="" srcset="" />
+    </button>
+    <!-- Navbar links -->
 
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#Bases ">Bases</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Ganadores">Ganadores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Pasantias">Pasantias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" target="_blank"
-              href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb">Aplicar
-              Ahora</a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#Bases ">Bases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Ganadores">Ganadores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Pasantias">Pasantias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank"
+            href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb">Aplicar
+            Ahora</a>
+        </li>
+      </ul>
     </div>
   </nav>
   <!-- end navbar -->
 
   <!-- Start Home -->
-<section class="home d-flex align-items-center">
-  <!-- <div class="effect-wrap">
-    <i class="fas fa-plus effect effect-1"></i>
-    <i class="fas fa-plus effect effect-2"></i>
-    <i class="fas fa-circle-notch effect effect-3"></i>
-  </div> -->
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-5 text-center">
-        <div class="home-img">
-          <!-- <div class="circle"></div> -->
-          <img class="avion-rosa" src="./img/avion-rosa.png" alt="" srcset="" />
-          <img class="avion-azul-f" src="./img/avion-azul-f.png" alt="" srcset="" />
-          <img class="avion-azul" src="./img/avion-azul.PNG" alt="" srcset="" />
-          <img class="dado" src="./img/dado.png" alt="" srcset="" />
-          <img class="logo-home" src="./img/logo-1.PNG" alt="" />
-          <img class="circulo-f" src="./img/circulo-f.png" alt="" srcset="" />
-          <img class="frame512" src="./img/frame512.png" alt="" srcset="" />
-          <img class="frame2" src="./img/frame2.png" alt="" srcset="" />
+  <section class="home d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 order-md-12 text-center">
+          <div class="home-img">
+            <img class="avion-rosa" src="./img/avion-rosa.png" alt="" srcset="" />
+            <img class="avion-azul-f" src="./img/avion-azul-f.png" alt="" srcset="" />
+            <img class="avion-azul" src="./img/avion-azul.PNG" alt="" srcset="" />
+            <img class="dado" src="./img/dado.png" alt="" srcset="" />
+            <img class="logo-home" src="./img/logo-1.PNG" alt="" />
+            <img class="circulo-f" src="./img/circulo-f.png" alt="" srcset="" />
+            <img class="frame512" src="./img/frame512.png" alt="" srcset="" />
+            <img class="frame2" src="./img/frame2.png" alt="" srcset="" />
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-7 home-text-container">
-        <div class="home-text">
-          <h1>Fondo de Iniciativas Innovadoras en educación</h1>
-          <p>
-            Creación, implementación y divulgación de propuestas prácticas
-            de innovación educativa.
-          </p>
-          <div class="container">
-            <div class="row brand-desktop">
-              <div class="col-6">
-                <div class="home-btn">
-                  <img class="video-play-btn" src="./img/ver_video.png" alt="" srcset="" />
-                  <span>Ver video</span>
+        <div class="col-md-7 order-1 home-text-container">
+          <div class="home-text">
+            <h1>Fondo de Iniciativas Innovadoras en educación</h1>
+            <p>
+              Creación, implementación y divulgación de propuestas prácticas
+              de innovación educativa.
+            </p>
+            <div class="container">
+              <div class="row brand-desktop">
+                <div class="col-6">
+                  <div class="home-btn">
+                    <img class="video-play-btn" src="./img/ver_video.png" alt="" srcset="" />
+                    <span>Ver video</span>
+                  </div>
+
                 </div>
-
-              </div>
-              <div class="col-6">
-                <div>
-                  <img src="./img/frame512.png" alt="" srcset="" />
-                  <img src="./img/frame2.png" alt="" srcset="" />
-                </div>                  
+                <div class="col-6">
+                  <div>
+                    <img src="./img/frame512.png" alt="" srcset="" />
+                    <img src="./img/frame2.png" alt="" srcset="" />
+                  </div>                  
+                </div>
               </div>
             </div>
           </div>
+          <img class="flecha-stroke-r" src="./img/flecha-stroke-r.png" alt="" srcset="" />
         </div>
-        <img class="flecha-stroke-r" src="./img/flecha-stroke-r.png" alt="" srcset="" />
       </div>
     </div>
-  </div>
-  <img class="goup" src="./img/goup.png" alt="">
-</section>
-<!-- End Home -->
+    <img class="goup" src="./img/goup.png" alt="">
+  </section>
+  <!-- End Home -->
 
   <!-- Video pop-up start -->
   <div class="video-popup">
     <div class="video-popup-inner">
       <i class="fas fa-times video-popup-close"></i>
       <div class="iframe-box">
-        <iframe id="player-1" src="https://www.youtube.com/embed/zpDBBnn3WSo" title="YouTube video player"
+        <!-- <iframe id="player-1" src="https://www.youtube.com/embed/zpDBBnn3WSo" title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
-        </iframe>
+        </iframe> -->
       </div>
     </div>
   </div>
@@ -182,7 +175,8 @@
               que surgen de la experiencia diaria de aprendizaje-enseñanza entre docentes y estudiantes. Se espera que estas propuestas, 
               una vez puestas en marcha, den como resultado mejoras en los aprendizajes de los estudiantes y el desarrollo de sus competencias para la vida.</p>
           </div>
-          <button class="btn-leer-mas">¡Leer más!</button>
+          <!-- <button class="btn-leer-mas">¡Leer más!</button> -->
+          <a class="btn-leer-mas" href="#">¡Leer más!</a>
         </div>
       </div>
     </div>
@@ -254,9 +248,9 @@
       <div class="video-popup-inner">
         <i class="fas fa-times video-popup-close"></i>
         <div class="iframe-box">
-          <iframe id="player-2" src="https://www.youtube.com/embed/mUBYuCE-sL4" 
+          <!-- <iframe id="player-2" src="https://www.youtube.com/embed/mUBYuCE-sL4" 
           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen></iframe>
+          allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
@@ -374,68 +368,90 @@
             <div>
               <h3>Ganadores</h3>
             </div>
-            <div>
-              <ul>
-                <li class="active"><a class="activo" href="#">1era edición</a></li>
-                <li><a href="#"></a>2da edición</li>
-                <li><a href="#"></a>3ra edición</li>
-                <li><a href="#"></a>4ta edición</li>
-              </ul>
+            <div data-name="Multiple Item" class="glider-contain multiple">
+              <div class="gradient-border-bottom">
+                <div class="gradient-border">
+                  <div id="dots2"></div>
+                  <div class="glider" id="glider-double">
+                    <div>
+                      <img src="./img/persons-1-1.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+                    <div>
+                      <img src="./img/persons-1-2.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+                    <div>
+                      <img src="./img/persons-1-3.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+
+                    <div>
+                      <img src="./img/persons-2-1.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+
+                    <div>
+                      <img src="./img/persons-2-2.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+
+                    <div>
+                      <img src="./img/persons-3-1.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+
+                    <div>
+                      <img src="./img/persons-3-2.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+                    
+                    <div>
+                      <img src="./img/persons-3-3.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+
+                    <div>
+                      <img src="./img/persons-4-1.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+                    <div>
+                      <img src="./img/persons-4-2.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                    </div>
+                    <div>
+                      <img src="./img/persons-4-3.png" alt="" srcset="">
+                      <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+                  </div>
+                </div>
+              </div>
+              <!-- <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-2"><i class="fa fa-chevron-left"></i></i></button>
+              <button role="button" aria-label="Next" class="glider-next" id="glider-next-2"><i class="fa fa-chevron-right"></i></i></button> -->
+              
             </div>
-            <div class="owl-carousel features-carousel">
+            <script>
+              window.addEventListener('load', function () {
+                window.glides = new Glider(document.getElementById('glider-double'), {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  // draggable: true,
+                  dots: '#dots2',
+                  arrows: {
+                    prev: '#glider-prev-2',
+                    next: '#glider-next-2'
+                  }
+                })
+              });
+            </script>
+            <!-- <div class="owl-carousel features-carousel">
               <div class="row ganadores-img-cont">
-                <div class="col-4">
-                  <img src="./img/persons-1-1.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-                <div class="col-4">
-                  <img src="./img/persons-1-2.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-                <div class="col-4">
-                  <img src="./img/persons-1-3.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
+                
               </div>
               <div class="row ganadores-img-cont">
-                <div class="col-6">
-                  <img src="./img/persons-2-1.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-                <div class="col-6">
-                  <img src="./img/persons-2-2.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
+            
                 </div>
               </div>
-              <div class="row ganadores-img-cont">
-                <div class="col-4">
-                  <img src="./img/persons-3-1.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-                <div class="col-4">
-                  <img src="./img/persons-3-2.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-                <div class="col-4">
-                  <img src="./img/persons-3-3.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-              </div>
-              <div class="row ganadores-img-cont">
-                <div class="col-4">
-                  <img src="./img/persons-4-1.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-                <div class="col-4">
-                  <img src="./img/persons-4-2.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-                <div class="col-4">
-                  <img src="./img/persons-4-3.png" alt="" srcset="">
-                  <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                </div>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -499,8 +515,8 @@
     <div class="video-popup-inner-3">
       <i class="fas fa-times video-popup-close"></i>
       <div class="iframe-box">
-        <iframe id="player-3" src="https://www.youtube.com/embed/MSjoA7Kn_1o" title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe id="player-3" src="https://www.youtube.com/embed/MSjoA7Kn_1o" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
     </div>
   </div>
@@ -581,50 +597,100 @@
   <section class="section-padding videos-sec">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 sub-container-videos-sec">
+      <div data-name="Perspective View" class="glider-contain multiple">
+        <div class="glider glider-persp" id="glider-persp">
+          <div><div class="gradient-border-bottom"><div class="gradient-border"><img src="./img/Group31.png" alt="" srcset=""></div></div></div>
+          <div><div class="gradient-border-bottom"><div class="gradient-border"><img src="./img/Group31.png" alt="" srcset=""></div></div></div>
+          <div><div class="gradient-border-bottom"><div class="gradient-border"><img src="./img/Group31.png" alt="" srcset=""></div></div></div>
+          <div><div class="gradient-border-bottom"><div class="gradient-border"><img src="./img/Group31.png" alt="" srcset=""></div></div></div>
+          <div><div class="gradient-border-bottom"><div class="gradient-border"><img src="./img/Group31.png" alt="" srcset=""></div></div></div>
+          <div><div class="gradient-border-bottom"><div class="gradient-border"><img src="./img/Group31.png" alt="" srcset=""></div></div></div>
+        </div>
+        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-per"><i class="fa fa-chevron-left"></i></i></button>
+        <button role="button" aria-label="Next" class="glider-next" id="glider-next-per"><i class="fa fa-chevron-right"></i></i></button>
+        <div id="dots-per"></div>
+      </div>
+      <script>
+        window.addEventListener('load', function () {
+          window.glides = new Glider(document.getElementById('glider-persp'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            draggable: true,
+            dots: '#dots-per',
+            arrows: {
+              prev: '#glider-prev-per',
+              next: '#glider-next-per'
+            },
+            responsive: [
+              {
+                // screens greater than >= 775px
+                breakpoint: 991,
+                settings: {
+                  // Set to `auto` and provide item width to adjust to viewport
+                  slidesToShow: 2,
+                  slidesToScroll: 'auto',
+                  itemWidth: 150,
+                  duration: 0.25
+                }
+              },
+              {
+                // screens greater than >= 1024px
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  itemWidth: 150,
+                  duration: 0.25
+                }
+              }
+            ]
+          })
+        });
+      </script>
+      <!-- <div class="col-12 sub-container-videos-sec">
         <div class="text-center">
           <h4><strong>Videos</strong></h4>
           <img src="./img/Group31.png" alt="" srcset="">
           <img  class="video-play-btn-4" src="./img/ver-video-am.png" alt="" srcset="">
           <p>Convocatoria abierta</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
   
-    <!-- Video pop-up start -->
-    <div class="video-popup-4">
-      <div class="video-popup-inner-4">
-        <i class="fas fa-times video-popup-close"></i>
-        <div class="iframe-box">
-          <iframe id="player-4" src="https://www.youtube.com/embed/XcvieKvmI5A" title="YouTube video player" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Video pop-up start -->
+<div class="video-popup-4">
+  <div class="video-popup-inner-4">
+    <i class="fas fa-times video-popup-close"></i>
+    <div class="iframe-box">
+      <!-- <iframe id="player-4" src="https://www.youtube.com/embed/XcvieKvmI5A" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+  </div>
+</div>
+<!-- Video pop-up end -->
+
+<!--  -->
+<section class="section-padding unete-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 sub-container-unete-sec">
+        <img src="./img/Group69.png" alt="" srcset="">
+        <div class="text-container">
+          <h4>¡Únete a la</h4>
+          <h4><strong>Comunidad</strong>!512!</h4>
+          <p>Regístrate en nuestra comunidad y
+            disfruta de beneficios exclusivos.</p>
         </div>
+        <img src="./img/Groupx.png" alt="" srcset="">
+        <img src="./img/avion-amarillo.png" alt="" srcset="">      
+          <a href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb"><strong>Quiero Unirme</strong></a>     
       </div>
     </div>
-    <!-- Video pop-up end -->
-
-      <!--  -->
-      <section class="section-padding unete-sec">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 sub-container-unete-sec">
-              <img src="./img/Group69.png" alt="" srcset="">
-              <div class="text-container">
-                <h4>¡Únete a la</h4>
-                <h4><strong>Comunidad</strong>!512!</h4>
-                <p>Regístrate en nuestra comunidad y
-                  disfruta de beneficios exclusivos.</p>
-              </div>
-              <img src="./img/Groupx.png" alt="" srcset="">
-              <img src="./img/avion-amarillo.png" alt="" srcset="">      
-                <a href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb"><strong>Quiero Unirme</strong></a>     
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  -->
+  </div>
+</section>
+<!--  -->
 
         <!-- Footer -->
   <footer class="footer">
@@ -688,6 +754,8 @@
   </div>
   <!-- jquery js -->
   <!-- <script src="js/jquery.min.js"></script> -->
+
+  <script src="js/glider.js"></script>
   <!-- popper js -->
   <script src="js/popper.min.js"></script>
   <!-- bootstrap js -->
