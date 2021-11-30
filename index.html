@@ -96,7 +96,7 @@
                   <div>
                     <img src="./img/frame2.png" alt="" srcset="" />
                     <img src="./img/frame512.png" alt="" srcset="" />
-                  </div>                  
+                  </div>
                 </div>
               </div>
             </div>
@@ -138,10 +138,14 @@
                 Convocatoria 5ta Edición abierta hasta el
                 <strong>15 de Marzo 2022.</strong>
               </h4>
-              <a class="btn-aplicar" href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb">!Quiero Aplicar!</a>
+              <a class="btn-aplicar"
+                href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb">!Quiero
+                Aplicar!</a>
             </div>
             <div class="col-5 align-self-center">
-              <a class="btn-aplicar-2" href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb">!Quiero Aplicar!</a>
+              <a class="btn-aplicar-2"
+                href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb">!Quiero
+                Aplicar!</a>
             </div>
           </div>
         </div>
@@ -220,7 +224,6 @@
     </div>
   </section>
 
-
   <section class="section-padding aportar-sec aportar-sec-desktop">
     <div class="container">
       <div class="row justify-content-center">
@@ -229,7 +232,7 @@
             <h2 class="texto-ser-parte"><strong>¿Quieres aportar a la educación dominicana?</strong> </h2>
             <a class="btn-ser-parte" href="#">¡Quiero ser parte!</a>
           </div>
-          <div class="center-video text-center">
+          <div class="center-video text-center" style="overflow: hidden;">
             <img class="aportar-sec-video" src="./img/rect-video.png" alt="" srcset="">
             <img class="video-play-btn-2" src="./img/ver-video-am.png" alt="">
           </div>
@@ -483,97 +486,28 @@
   <!-- seccion ganadores end -->
 
   <!--  -->
-  <section class="section-padding ganadores-sec">
+  <section id='Ganadores' class="section-padding ganadores-sec">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <div>
-            <h3>Ganadores</h3>
+        <div class="col-12 text-center"
+          style="display:flex; flex-direction: column ; align-items: center; justify-content: center;">
+          <div class="ganadores-title">
+            Ganadores
           </div>
-          <div data-name="Multiple Item" class="glider-contain multiple">
-            <div class="gradient-border-bottom">
-              <div class="gradient-border">
-                <div id="dots2"></div>
-                <div class="glider" id="glider-double">
-                  <div>
-                    <img src="./img/persons-1-1.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-                  <div>
-                    <img src="./img/persons-1-2.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-                  <div>
-                    <img src="./img/persons-1-3.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-
-                  <div>
-                    <img src="./img/persons-2-1.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-
-                  <div>
-                    <img src="./img/persons-2-2.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-
-                  <div>
-                    <img src="./img/persons-3-1.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-
-                  <div>
-                    <img src="./img/persons-3-2.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-
-                  <div>
-                    <img src="./img/persons-3-3.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-
-                  <div>
-                    <img src="./img/persons-4-1.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-                  <div>
-                    <img src="./img/persons-4-2.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-                  <div>
-                    <img src="./img/persons-4-3.png" alt="" srcset="">
-                    <img class="row-next" src="./img/row-next.png" alt="" srcset="">
-                  </div>
-                </div>
-              </div>
-              <!-- <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-2"><i class="fa fa-chevron-left"></i></i></button>
-              <button role="button" aria-label="Next" class="glider-next" id="glider-next-2"><i class="fa fa-chevron-right"></i></i></button> -->
-
+          <div class="ganadores-container">
+            <div id='Primera-Edicion' onclick="onClickGanadores('Primera-Edicion')"
+              class="ganadores-options ganadores-options-active">1era
+              Edición</div>
+            <div id='Segunda-Edicion' onclick="onClickGanadores('Segunda-Edicion')" class="ganadores-options">2da
+              Edición</div>
+            <div id='Tercera-Edicion' onclick="onClickGanadores('Tercera-Edicion')" class="ganadores-options">3ra
+              Edición</div>
+            <div id='Cuarta-Edicion' onclick="onClickGanadores('Cuarta-Edicion')" class="ganadores-options">4ta Edición
             </div>
-            <script>
-              window.addEventListener('load', function () {
-                window.glides = new Glider(document.getElementById('glider-double'), {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-                  // draggable: true,
-                  dots: '#dots2',
-                  arrows: {
-                    prev: '#glider-prev-2',
-                    next: '#glider-next-2'
-                  }
-                })
-              });
-            </script>
-            <!-- <div class="owl-carousel features-carousel">
-              <div class="row ganadores-img-cont">
-                
-              </div>
-              <div class="row ganadores-img-cont">
-            
-                </div>
-              </div>
-            </div> -->
+          </div>
+
+          <div id='ganadores-container' class="ganadores-container-cards">
+
           </div>
         </div>
       </div>
@@ -581,7 +515,7 @@
   <!--  -->
 
   <!--  -->
-  <section class="section-padding pasantias-sec">
+  <section id="Pasantias" class="section-padding pasantias-sec">
     <div class="container">
       <div class="text-center text-center-desktop">
         <h1><strong>Pasantías</strong></h1>
@@ -603,7 +537,7 @@
 
             <li>
               <div class="icon-container">
-                <img src="./img/Group 120.png" alt="" srcset="">
+                <img src="./img/Group 120.png" alt="" srcset="" style="z-index: -5;position: relative;">
               </div>
               <p>Espacio de formación coloborativo para el desarrollo de competencias profesionales.</p>
             </li>
@@ -650,7 +584,7 @@
       <div class="row justify-content-center">
         <div class="col-12 sub-container-publicaciones-sec">
           <div class="text-center">
-            <h4><strong>Publicaciones</strong></h4>
+            <div class="publicaciones-title ">Publicaciones</div>
             <div class="owl-carousel features-carousel">
               <div class="row ganadores-img-cont">
                 <div class="col-12">
@@ -692,7 +626,7 @@
   <!--  -->
   <section class="section-padding publicaciones-sec publicaciones-sec-desktop">
     <div class="container">
-      <h4 class="text-center"><strong>Publicaciones</strong></h4>
+      <div class="publicaciones-title ">Publicaciones</div>
       <div class="row">
         <div class="col-4">
           <img class="img-publicacion" src="./img/Group125.png" alt="" srcset="" />
@@ -720,7 +654,8 @@
   <!--  -->
   <!--  -->
   <section class="section-padding videos-sec">
-    <div class="container">
+    <div class="container ">
+      <div class="videos-title text-center">Videos</div>
       <div class="row justify-content-center">
         <div data-name="Perspective View" class="glider-contain multiple">
           <div class="glider glider-persp" id="glider-persp">
@@ -820,83 +755,86 @@
       </div>
     </div>
   </div>
-</div>
-<!-- Video pop-up end -->
+  </div>
+  <!-- Video pop-up end -->
 
-<!--  -->
-<section class="section-padding unete-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 sub-container-unete-sec">
-        <img src="./img/Group69.png" alt="" srcset="">
-        <div class="text-container">
-          <h4>¡Únete a la</h4>
-          <h4><strong>Comunidad </strong>!<span style="color: #00ADEE;">5</span><span style="color: #B6D333;">1</span><span style="color: #FCD400;">2</span>!</h4>
-          <p>Regístrate en nuestra comunidad y
-            disfruta de beneficios exclusivos.</p>
+  <!--  -->
+  <section class="section-padding unete-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 sub-container-unete-sec">
+          <img src="./img/Group69.png" alt="" srcset="">
+          <div class="text-container margin-left-4">
+            <h4>¡Únete a la</h4>
+            <h4><strong>Comunidad </strong>!<span style="color: #00ADEE;">5</span><span
+                style="color: #B6D333;">1</span><span style="color: #FCD400;">2</span>!</h4>
+            <p>Regístrate en nuestra comunidad y
+              disfruta de beneficios exclusivos.</p>
+          </div>
+          <img src="./img/Groupx.png" alt="" srcset="">
+          <img src="./img/avion-amarillo.png" alt="" srcset="">
+          <div style="margin-top: -25px;  margin-right: 12px;" class="text-md-right">
+            <a class="btn-unir-mobile margin-right-4"
+              href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb"><strong>Quiero
+                Unirme</strong></a>
+          </div>
         </div>
-        <img src="./img/Groupx.png" alt="" srcset="">
-        <img src="./img/avion-amarillo.png" alt="" srcset="">  
-        <div style="margin-top: -25px;  margin-right: 12px;" class="text-md-right">
-          <a class="btn-unir-mobile" href="https://512.us17.list-manage.com/subscribe?u=7af07f3c3ab80b1a3bdc3e5c8&id=27085f6ceb"><strong>Quiero Unirme</strong></a>     
-        </div>    
       </div>
-    </div>
   </section>
   <!--  -->
 
   <!-- Footer -->
   <footer class="footer">
 
-      <div class="row footer-section-1">
-        <div class="col-6 footer-section-1--col">
-          <p>
-            <strong>
-              Fondo de Innovacion
-            </strong>
-          </p>
-          <p>
-            Convocatoria</p>
-          <p>
-            <strong>
-              Se parte
-            </strong>
-          </p>
-          <p>
-            Bases</p>
-          <p>
-            Formulario</p>
-          <p>
-            Requisitios</p>
-        </div>
-        <div class="col-6 footer-section-1--col">
-          <p><strong>Beneficios</strong></p>
-          <p><strong>Calendario</strong></p>
-          <p><strong>Ganadores</strong></p>
-          <p><strong>Pasantías</strong></p>
-          <p><strong>Publicaciones</strong></p>
-          <p><strong>Videos</strong></p>
-        </div>
-      </div>
-      <div class="row footer-sign"></div>
-      <div class="desktop-only footer-media-v2">
-        <img src="./img/Fondo B.png" alt="" class="footer-media-logo-B">
-        <img src="./img/inicia.png" alt="" class="footer-media-logo-inicia-B">
-        <img src="./img/instituto-512.png" alt="">
-      </div>
-      <div class="row footer-media">
-        <img src='./img/facebook-icon-desktop/Vector/Vector/Vector/Facebook.png' alt="" class="desktop-only">
-        <img src='./img/facebook-icon/Vector/Vector/Vector/Facebook.png' alt="" class="mobile-only">
-        <img src='./img/twitter-icon-desktop/Vector/Vector/Vector/Twitter.png' alt="" class="desktop-only">
-        <img src='./img/twitter-icon/Vector/Vector/Vector/Twitter.png' alt="" class="mobile-only">
-        <img src='./img/youtube-icon-desktop/Vector/Vector/Vector/Youtube.png' alt="" class="desktop-only">
-        <img src='./img/youtube-icon/Vector/Vector/Vector/Youtube.png' alt="" class="mobile-only">
-      </div>
-      
-      <div class="row footer-last-paragraph mobile-only">
-        <p>Si tienes alguna duda o comentario puedes comunicarte con nosotros en <strong>innovacion@512.com.do</strong>
+    <div class="row footer-section-1">
+      <div class="col-6 footer-section-1--col">
+        <p>
+          <strong>
+            Fondo de Innovacion
+          </strong>
         </p>
+        <p>
+          Convocatoria</p>
+        <p>
+          <strong>
+            Se parte
+          </strong>
+        </p>
+        <p>
+          Bases</p>
+        <p>
+          Formulario</p>
+        <p>
+          Requisitios</p>
       </div>
+      <div class="col-2 footer-section-1--col">
+        <p><strong>Beneficios</strong></p>
+        <p><strong>Calendario</strong></p>
+        <p><strong>Ganadores</strong></p>
+        <p><strong>Pasantías</strong></p>
+        <p><strong>Publicaciones</strong></p>
+        <p><strong>Videos</strong></p>
+      </div>
+    </div>
+    <div class="row footer-sign"></div>
+    <div class="desktop-only footer-media-v2">
+      <img src="./img/Fondo B.png" alt="" class="footer-media-logo-B">
+      <img src="./img/inicia.png" alt="" class="footer-media-logo-inicia-B">
+      <img src="./img/instituto-512.png" alt="">
+    </div>
+    <div class="row footer-media">
+      <img src='./img/facebook-icon-desktop/Vector/Vector/Vector/Facebook.png' alt="" class="desktop-only">
+      <img src='./img/facebook-icon/Vector/Vector/Vector/Facebook.png' alt="" class="mobile-only">
+      <img src='./img/twitter-icon-desktop/Vector/Vector/Vector/Twitter.png' alt="" class="desktop-only">
+      <img src='./img/twitter-icon/Vector/Vector/Vector/Twitter.png' alt="" class="mobile-only">
+      <img src='./img/youtube-icon-desktop/Vector/Vector/Vector/Youtube.png' alt="" class="desktop-only">
+      <img src='./img/youtube-icon/Vector/Vector/Vector/Youtube.png' alt="" class="mobile-only">
+    </div>
+
+    <div class="row footer-last-paragraph mobile-only">
+      <p>Si tienes alguna duda o comentario puedes comunicarte con nosotros en <strong>innovacion@512.com.do</strong>
+      </p>
+    </div>
 
   </footer>
 

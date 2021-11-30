@@ -134,6 +134,63 @@ $(document).ready(function () {
         $("#dots2 > button:nth-child(3)").append("<p>3era edición</p>");
         $("#dots2 > button:nth-child(4)").append("<p>4ta edición</p>");
     }, 1000);
+
+    const ganadores = {
+        'Primera-Edicion': [{
+            title: 'Biblioteca Virtual',
+            imgRoute: './img/ganadores-1-1.png'
+        }, {
+            title: 'Fomento de la lectura con la Creatividad',
+            imgRoute: './img/ganadores-1-2.png'
+        }, {
+            title: 'Innovación y Diversificación de las Matemáticas',
+            imgRoute: './img/ganadores-1-3.png'
+        }],
+        'Segunda-Edicion': [{
+            title: 'Mira lo que Aprendí',
+            imgRoute: './img/ganadores-2-1.png'
+        }, {
+            title: 'Variabilidad Genética y Crianza de Conejos',
+            imgRoute: './img/ganadores-2-2.png'
+        }],
+        'Tercera-Edicion': [{
+            title: 'CEN Makerspace',
+            imgRoute: './img/ganadores-3-1.png'
+        }, {
+            title: 'CQL: Cálculo de la química para la limpieza',
+            imgRoute: './img/ganadores-3-2.png'
+        }, {
+            title: 'LUDUM',
+            imgRoute: './img/ganadores-3-4.png'
+        }],
+        'Cuarta-Edicion': [{
+            title: 'Proyecto DRON',
+            imgRoute: './img/ganadores-4-1.png'
+        }, {
+            title: 'La Meteorología en la Educación',
+            imgRoute: './img/ganadores-4-2.png'
+        }, {
+            title: 'Techos Acuapónicos',
+            imgRoute: './img/ganadores-4-3.png'
+        }]
+    }
+    const createGanadores = document.getElementById('ganadores-container')
+    createGanadores.innerHTML = '';
+    ganadores['Primera-Edicion'].forEach(ganador => {
+        createGanadores.innerHTML += `
+        <div class="ganadores-card">
+            <div class='ganadores-card-header'>
+                <div class='ganadores-card-header-title'>
+                    ${ganador.title}
+                </div>
+                <div class='ganadores-open-card'>
+                    <img src='./img/ganadores-open-card/Boton/arrow.png' alt="">
+                </div>
+            </div>
+            <div class='ganadores-card-body' style='background: url(${ganador.imgRoute}) no-repeat bottom,url("./img/fondo-cards.png") no-repeat bottom '></div>
+        </div>
+    `
+    })
 })
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -303,3 +360,83 @@ $(document).ready(function () {
 });
 
 // SECCION DE BENEFICIOS
+
+
+//Ganadores start
+
+const ganadores = {
+    'Primera-Edicion': [{
+        title: 'Biblioteca Virtual',
+        imgRoute: './img/ganadores-1-1.png'
+    }, {
+        title: 'Fomento de la lectura con la Creatividad',
+        imgRoute: './img/ganadores-1-2.png'
+    }, {
+        title: 'Innovación y Diversificación de las Matemáticas',
+        imgRoute: './img/ganadores-1-3.png'
+    }],
+    'Segunda-Edicion': [{
+        title: 'Mira lo que Aprendí',
+        imgRoute: './img/ganadores-2-1.png'
+    }, {
+        title: 'Variabilidad Genética y Crianza de Conejos',
+        imgRoute: './img/ganadores-2-2.png'
+    }],
+    'Tercera-Edicion': [{
+        title: 'CEN Makerspace',
+        imgRoute: './img/ganadores-3-1.png'
+    }, {
+        title: 'CQL: Cálculo de la química para la limpieza',
+        imgRoute: './img/ganadores-3-2.png'
+    }, {
+        title: 'LUDUM',
+        imgRoute: './img/ganadores-3-4.png'
+    }],
+    'Cuarta-Edicion': [{
+        title: 'Proyecto DRON',
+        imgRoute: './img/ganadores-4-1.png'
+    }, {
+        title: 'La Meteorología en la Educación',
+        imgRoute: './img/ganadores-4-2.png'
+    }, {
+        title: 'Techos Acuapónicos',
+        imgRoute: './img/ganadores-4-3.png'
+    }]
+}
+
+const limpiarGanadores = () => {
+    const ganadoresContainer = document.getElementsByClassName('ganadores-options');
+    for (let i = 0; i < ganadoresContainer.length; i++) {
+        ganadoresContainer[i].classList.remove('ganadores-options-active');
+    }
+}
+
+const expandGanadores = (ganadores) => {
+    console.log(ganadores);
+}
+
+const onClickGanadores = (edicion) => {
+    const createGanadores = document.getElementById('ganadores-container')
+    createGanadores.innerHTML = '';
+    limpiarGanadores();
+
+    document.getElementById(edicion).classList.add('ganadores-options-active');
+
+    ganadores[edicion].forEach(ganador => {
+        createGanadores.innerHTML += `
+        <div class="ganadores-card">
+            <div class='ganadores-card-header'>
+                <div class='ganadores-card-header-title'>
+                    ${ganador.title}
+                </div>
+                ${edicion == 'Primera-Edicion' ? `<div class='ganadores-open-card' onclick={expandGanadores(this)}>
+                    <img src='./img/ganadores-open-card/Boton/arrow.png' alt="">
+                </div>` : ''}   
+            </div>
+            <div class='ganadores-card-body' style='background: url(${ganador.imgRoute}) no-repeat bottom,url("./img/fondo-cards.png") no-repeat bottom '></div>
+        </div>
+    `
+    })
+}
+
+//Ganadores end
