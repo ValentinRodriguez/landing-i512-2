@@ -560,14 +560,65 @@
           </ul>
         </div>
 
-        <div class="col-md-12 col-lg-7">
+        <!-- <div class="col-md-12 col-lg-7">
           <h4 class="titulo-exp"><strong>Experiencias</strong></h4>
           <div class="owl-carousel features-carousel">
-            <div class="row ganadores-img-cont">
+            <div class=" ganadores-img-cont">
+              <img src="./img/Group133.png" alt="" srcset="">
+              <img class="video-play-btn-3" src="./img/ver_video.png" alt="" srcset="">
+            </div>
+            <div class=" ganadores-img-cont">
+              <img src="./img/Group133.png" alt="" srcset="">
+              <img class="video-play-btn-3" src="./img/ver_video.png" alt="" srcset="">
+            </div>
+            <div class=" ganadores-img-cont">
               <img src="./img/Group133.png" alt="" srcset="">
               <img class="video-play-btn-3" src="./img/ver_video.png" alt="" srcset="">
             </div>
           </div>
+          <img class="NextStrokeR" src="./img/Next Stroke R.png" alt="" srcset="">
+        </div> -->
+        <div class="col-md-12 col-lg-7">
+          <h4 class="titulo-exp"><strong>Experiencias</strong></h4>
+          <div data-name="Single Item" class="glider-contain">
+            <div class="gradient-border-bottom">
+              <div class="gradient-border">
+                <div class="glider" id="glider-single">
+                  <div>
+                    <img src="./img/Group133.png" alt="" srcset="">
+                    <img class="video-play-btn-3" src="./img/ver_video.png" alt="" srcset="">
+                  </div>
+                  <div>
+                    <img src="./img/Group133.png" alt="" srcset="">
+                    <img class="video-play-btn-3" src="./img/ver_video.png" alt="" srcset="">
+                  </div>
+                  <div>
+                    <img src="./img/Group133.png" alt="" srcset="">
+                    <img class="video-play-btn-3" src="./img/ver_video.png" alt="" srcset="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev"><i class="fa fa-chevron-left"></i></i></button>
+            <button role="button" aria-label="Next" class="glider-next" id="glider-next"><i class="fa fa-chevron-right"></i></i></button>
+            <div id="dots"></div>
+          </div>
+          <script>
+            window.addEventListener('load', function(){
+              new Glider(document.getElementById('glider-single'), {
+                slidesToShow: 1,
+                dots: '#dots',
+                // draggable: true,
+                arrows: {
+                  prev: '#glider-prev',
+                  next: '#glider-next'
+                },
+                easing: function (x, t, b, c, d) {
+                  return c*(t/=d)*t + b;
+                }
+              });
+            });
+          </script>
           <!-- <img class="NextStrokeR" src="./img/Next Stroke R.png" alt="" srcset=""> -->
         </div>
       </div>
@@ -856,6 +907,7 @@
   <script>
     $(".card-grid").flip();
   </script>
+  
 </body>
 
 </html>
