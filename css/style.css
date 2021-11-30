@@ -344,19 +344,6 @@ ul {
   /* animation: spin_01 10S linear infinite; */
 }
 
-.home-img img:before {
-  content: "";
-  position: absolute;
-  height: 92px;
-  width: 146px;
-  background-image: url("../img/avion-azul.png");
-  /* border-radius: 50%; */
-  left: 30px;
-  top: 30px;
-  transform-origin: 170px 170px;
-  animation: spin_01 10s linear infinite;
-}
-
 /*---------------------------------- 
 Video POPUP
 ----------------------------------*/
