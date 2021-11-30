@@ -964,6 +964,7 @@ mobile-section-beneficios-displey-2 {
   .btn-aplicar,
   .frame512,
   .frame2,
+  .mobile-only,
   .home-text-container .flecha-stroke-r {
     display: none;
   }
@@ -1764,7 +1765,7 @@ mobile-section-beneficios-displey-2 {
   }
 
   .ganadores-card {
-    width: 90%;
+    width: 50%;
     height: 300px;
     background: #ffffff;
     box-shadow: 0px 8px 15px rgba(130, 185, 219, 0.45);
