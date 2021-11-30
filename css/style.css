@@ -1207,6 +1207,8 @@ mobile-section-beneficios-displey-2 {
       "header" 1fr
       "body" 3fr;
 
+    margin-top: 1rem;
+
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
     -ms-animation: fadein 1s; /* Internet Explorer */
@@ -1252,6 +1254,7 @@ mobile-section-beneficios-displey-2 {
     align-items: center;
     width: 80%;
     margin-top: 2rem;
+    flex-wrap: wrap;
   }
 
   .ganadores-card-header {
@@ -1680,12 +1683,14 @@ mobile-section-beneficios-displey-2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .ganadores-options {
     background: #ffffff;
     box-shadow: -1px 4px 9px rgba(130, 185, 219, 0.45);
     border-radius: 20px;
-    width: 23%;
+    width: 30%;
     height: 24px;
     cursor: pointer;
     font-family: Poppins;

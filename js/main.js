@@ -415,6 +415,8 @@ const limpiarGanadores = () => {
 
 const expandGanadores = (index, el, id) => {
     if (index == 0) {
+        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_biblioteca_virtual.pdf')
+        document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
         document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
         document.getElementById('ganadores-modal-p').innerHTML = `
     <strong>Elaborado por:</strong>
@@ -425,6 +427,7 @@ const expandGanadores = (index, el, id) => {
     }
 
     if (index == 1) {
+        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_fomento_creatividad.pdf')
         document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-2.png')
         document.getElementById('ganadores-modal-p').innerHTML = `
         <strong>Elaborado por:</strong>
@@ -435,6 +438,7 @@ Marcily Montás
     }
 
     if (index == 2) {
+        document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_innovacion_matematica.pdf')
         document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-3.png')
         document.getElementById('ganadores-modal-p').innerHTML = `
         <strong>Elaborado por:</strong>
