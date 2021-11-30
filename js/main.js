@@ -68,7 +68,7 @@ $(document).ready(function () {
     $('.features-carousel').owlCarousel({
         // loop: true,
         margin: 1,
-        nav:false,
+        nav: false,
         responsiveClass: true,
         responsive: {
             // breakpoint from 0 up
@@ -90,12 +90,12 @@ $(document).ready(function () {
     $('#customNextBtn').click(function () {
         owl.trigger('next.owl.carousel');
     })
-    
+
     $('.goup').click(function () {
-        $('html, body').animate({scrollTop:0}, '300');
+        $('html, body').animate({ scrollTop: 0 }, '300');
     })
 
-    document.querySelectorAll('.ganadores-sec .container ul li').forEach(li => {       
+    document.querySelectorAll('.ganadores-sec .container ul li').forEach(li => {
         li.addEventListener('click', function (e) {
             console.log(e.path);
             if ($(this).hasClass("active")) {
@@ -107,23 +107,32 @@ $(document).ready(function () {
         });
     });
 
-    $( ".btn-leer-mas" ).click(function() {
-        $( ".leer-content" ).slideToggle( "fast" );
-            var $this = $(this);
-            $( ".content" ).toggleClass("open");
-                $this.toggleClass("open");
-                if ($this.hasClass("open")) {
-                    $this.html("Regresar");
-                } else {
-                    $this.html("Leer más");
-                }
+    $("#show-content-desktop-se-parte-transformacion-digital").click(function () {
+        $("#content-desktop-se-parte-transformacion-digital").slideToggle(700);
+        const el = document.getElementById("show-content-desktop-se-parte-transformacion-digital");
+        if (el.innerText === "¡Leer más!") {
+            el.innerText = "¡Leer menos!";
+        } else {
+            el.innerText = "¡Leer más!";
+        }
+    });
+
+
+    $("#show-content-mobil-se-parte-transformacion-digital").click(function () {
+        $("#content-mobil-se-parte-transformacion-digital").slideToggle(700);
+        const el = document.getElementById("show-content-mobil-se-parte-transformacion-digital");
+        if (el.innerText === "¡Leer más!") {
+            el.innerText = "¡Leer menos!";
+        } else {
+            el.innerText = "¡Leer más!";
+        }
     });
 
     setTimeout(() => {
-        $( "#dots2 > button:nth-child(1)" ).append( "<p>1era edición</p>" );
-        $( "#dots2 > button:nth-child(2)" ).append( "<p>2da edición</p>" );
-        $( "#dots2 > button:nth-child(3)" ).append( "<p>3era edición</p>" );
-        $( "#dots2 > button:nth-child(4)" ).append( "<p>4ta edición</p>" );
+        $("#dots2 > button:nth-child(1)").append("<p>1era edición</p>");
+        $("#dots2 > button:nth-child(2)").append("<p>2da edición</p>");
+        $("#dots2 > button:nth-child(3)").append("<p>3era edición</p>");
+        $("#dots2 > button:nth-child(4)").append("<p>4ta edición</p>");
     }, 1000);
 })
 
@@ -289,7 +298,7 @@ const clickBtnBeneficiosMobile = (element, section) => {
 }
 
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.sub-container-beneficios-mobile').height($('.sub-container-beneficios-mobile').height() + 80);
 });
 
