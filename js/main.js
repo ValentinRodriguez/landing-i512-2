@@ -416,6 +416,7 @@ const limpiarGanadores = () => {
 const expandGanadores = (index, el, id) => {
     if (index == 0) {
         document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_biblioteca_virtual.pdf')
+        document.getElementById('ganadores-1-1').setAttribute('src', './videos/principal.mp4')
         document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
         document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
         document.getElementById('ganadores-modal-p').innerHTML = `

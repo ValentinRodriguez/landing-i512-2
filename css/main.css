@@ -161,14 +161,14 @@ user-select: none; /* Standard */
     margin: 0 0 7px 0;
   }
 
-  /* .glider.draggable {
+  .glider.draggable {
     cursor: -webkit-grab;
     cursor: grab;
-  } */
-  /* .glider.drag {
+  } 
+  .glider.drag {
     cursor: -webkit-grabbing;
     cursor: grabbing;
-  } */
+  }
   .glider,.glider-track, .glider-slide {
     -webkit-backface-visibility:  hidden;
     backface-visibility: hidden;

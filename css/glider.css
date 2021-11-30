@@ -19,7 +19,7 @@
   display: flex;
   z-index: 1;
 }
-/* .glider.draggable {
+.glider.draggable {
   user-select: none;
   cursor: -webkit-grab;
   cursor: grab;
@@ -31,7 +31,7 @@
 .glider.drag {
   cursor: -webkit-grabbing;
   cursor: grabbing;
-} */
+} 
 .glider-slide {
   user-select: none;
   justify-content: center;
