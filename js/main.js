@@ -430,7 +430,7 @@ const expandGanadores = (index, el, id) => {
         document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_fomento_creatividad.pdf')
         document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-2.png')
         document.getElementById('ganadores-modal-p').innerHTML = `
-        <strong>Elaborado por:</strong>
+        <strong>Elaborado por:</strong> 
         Yaneris Carrasco
 Marcily Montás
         <strong>Instituto Politécnico Hainamosa</strong>`;
