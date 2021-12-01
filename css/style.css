@@ -1461,6 +1461,14 @@ mobile-section-beneficios-displey-2 {
 }
 
 @media (max-width: 991px) {
+
+  video{
+    width: 100%;
+  }
+  .video-for-mobile {
+    width: 100%;
+  }
+
   .home-text h1 {
     font-size: 34px;
     font-weight: 700;

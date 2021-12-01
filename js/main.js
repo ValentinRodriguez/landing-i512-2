@@ -352,6 +352,9 @@ const clickBtnBeneficiosMobile = (element, section) => {
         element.classList.add('btn-beneficios-section-active');
         const btnSection2 = document.getElementById('section-2-mobile')
         btnSection2.classList.remove('btn-beneficios-section-active');
+        
+        const sec1 = document.getElementById('sec-2-beneficios')
+        sec1.classList.remove('show');
         transformBtnBeneficiosCometaIconToGreenHandler(true);
 
         transformBtnBeneficiosBookIconToWhiteHandler(true);
@@ -359,6 +362,8 @@ const clickBtnBeneficiosMobile = (element, section) => {
         element.classList.add('btn-beneficios-section-active');
         const btnSection1 = document.getElementById('section-1-mobile')
         btnSection1.classList.remove('btn-beneficios-section-active');
+        const sec1 = document.getElementById('sec-1-beneficios')
+        sec1.classList.remove('show');
         transformBtnBeneficiosCometaIconToWhitenHandler(true);
 
         transformBtnBeneficiosBookIconToGreenHandler(true);
@@ -387,7 +392,7 @@ const expandGanadores = (index, el, element) => {
     if (el == 'Primera-Edicion') {
         if (index == 0) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_biblioteca_virtual.pdf')
-            document.getElementById('ganadores-1-1').setAttribute('src', './videos/principal.mp4')
+            document.getElementById('ganadores-modal-video').setAttribute('src', './videos/principal.mp4')
             document.getElementById('ganadores-title-modal').innerHTML = 'Biblioteca Virtual'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
@@ -464,8 +469,7 @@ Martha Vicioso
     if (el == 'Tercera-Edicion') {
         if (index == 0) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/CEN.pdf')
-
-            document.getElementById('ganadores-1-1').setAttribute('src', './videos/principal.mp4')
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/1hxDo8N8pbn9La4Zd2Tb0psAQjnoNcqxp/view?usp=sharing')
             document.getElementById('ganadores-title-modal').innerHTML = 'CEN Makerspace'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-3-1.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
@@ -506,7 +510,7 @@ Martha Vicioso
         if (index == 0) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/Proyecto Dron.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Proyecto Dron';
-            document.getElementById('ganadores-1-1').setAttribute('src', './videos/principal.mp4')
+            document.getElementById('ganadores-modal-video').setAttribute('src', './videos/principal.mp4')
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-1.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
     <strong>Elaborado por:</strong>
