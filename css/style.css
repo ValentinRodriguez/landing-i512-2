@@ -929,6 +929,7 @@ mobile-section-beneficios-displey-2 {
 @media (min-width: 992px) {
   /* NAVBAR */
 
+
   .navbar .container #logo {
     width: 90%;
   }
@@ -1462,6 +1463,9 @@ mobile-section-beneficios-displey-2 {
 
 @media (max-width: 991px) {
 
+  .ganadores-iframe-mobile {
+    width: 300px;
+  }
   video{
     width: 100%;
   }

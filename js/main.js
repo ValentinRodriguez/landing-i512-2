@@ -146,7 +146,7 @@ $(document).ready(function () {
 
     document.querySelectorAll('.ganadores-sec .container ul li').forEach(li => {
         li.addEventListener('click', function (e) {
-            console.log(e.path);
+
             if ($(this).hasClass("active")) {
                 return
             } else {
