@@ -344,19 +344,6 @@ ul {
   /* animation: spin_01 10S linear infinite; */
 }
 
-.home-img img:before {
-  content: "";
-  position: absolute;
-  height: 92px;
-  width: 146px;
-  background-image: url("../img/avion-azul.png");
-  /* border-radius: 50%; */
-  left: 30px;
-  top: 30px;
-  transform-origin: 170px 170px;
-  animation: spin_01 10s linear infinite;
-}
-
 /*---------------------------------- 
 Video POPUP
 ----------------------------------*/
@@ -977,6 +964,7 @@ mobile-section-beneficios-displey-2 {
   .btn-aplicar,
   .frame512,
   .frame2,
+  .mobile-only,
   .home-text-container .flecha-stroke-r {
     display: none;
   }
@@ -1453,7 +1441,7 @@ mobile-section-beneficios-displey-2 {
   }
 
   .btn-unir-mobile {
-    font-size: 36px;
+    font-size: 40px;
     position: relative;
     bottom: 3.1rem;
     right: 2.5rem;
@@ -1479,7 +1467,7 @@ mobile-section-beneficios-displey-2 {
     color: #070606;
     margin: 30px 0 20px;
   }
-  .btn-unir-mobile {
+  .btn-unir-mobile{
     font-size: 20px;
     position: relative;
     top: -1rem;
@@ -1775,21 +1763,22 @@ mobile-section-beneficios-displey-2 {
   }
 
   .ganadores-card {
-    width: 33%;
+    width: 86%;
     height: 300px;
     background: #ffffff;
-    box-shadow: 0px 8px 15px rgba(130, 185, 219, 0.45);
+    box-shadow: 0px 8px 15px rgb(130 185 219 / 45%);
     border-radius: 20px;
     display: grid;
     grid-template:
-      "header" 1fr
-      "body" 3fr;
+        "header" 1fr
+        "body" 3fr;
     margin-top: 0.5rem;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
     animation: fadein 2s;
+    margin: 1rem auto;
   }
 
   .margin-left-4 {
@@ -1802,10 +1791,6 @@ mobile-section-beneficios-displey-2 {
   .navbar {
     padding-right: 0;
     padding-left: 0;
-  }
-  .container .home-img .logo-home {
-    width: 70%;
-    border-radius: 32px;
   }
 
   .img-seniora {
@@ -1983,7 +1968,7 @@ mobile-section-beneficios-displey-2 {
     transform: rotate(75deg);
     position: absolute;
     right: 4px;
-    bottom: -31px;
+    bottom: -50px;
     width: 97px;
   }
 
@@ -2054,7 +2039,7 @@ mobile-section-beneficios-displey-2 {
   .sub-footer {
     display: none;
   }
-}
+
 
 .timelime-sec {
   margin-top: 40px;
@@ -2073,7 +2058,7 @@ section.section-padding.timelime-sec > img:nth-child(1) {
   right: 35%;
   top: -27px;
 }
-
+}
 section.section-padding.timelime-sec > img:nth-child(2) {
   right: 30px;
   top: 50px;
@@ -2277,3 +2262,4 @@ img {
   border-radius: 6.73695px;
 }
  */
+}
