@@ -960,7 +960,7 @@ mobile-section-beneficios-displey-2 {
   .text-center-mobile,
   .timelime-sec-mobile,
   .separte-sec-mobile,
-  .brand-desktop,
+  .brand-mobile,
   .btn-aplicar,
   .frame512,
   .frame2,
@@ -1492,6 +1492,10 @@ mobile-section-beneficios-displey-2 {
     border-radius: 20px;
   }
 
+  .group42 {
+      right: 0;
+      bottom: -59px;
+  }
   .modal {
     position: fixed;
     top: 0;
@@ -2262,4 +2266,3 @@ img {
   border-radius: 6.73695px;
 }
  */
-}
