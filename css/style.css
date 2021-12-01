@@ -344,19 +344,6 @@ ul {
   /* animation: spin_01 10S linear infinite; */
 }
 
-.home-img img:before {
-  content: "";
-  position: absolute;
-  height: 92px;
-  width: 146px;
-  background-image: url("../img/avion-azul.png");
-  /* border-radius: 50%; */
-  left: 30px;
-  top: 30px;
-  transform-origin: 170px 170px;
-  animation: spin_01 10s linear infinite;
-}
-
 /*---------------------------------- 
 Video POPUP
 ----------------------------------*/
@@ -977,6 +964,7 @@ mobile-section-beneficios-displey-2 {
   .btn-aplicar,
   .frame512,
   .frame2,
+  .mobile-only,
   .home-text-container .flecha-stroke-r {
     display: none;
   }
@@ -1479,7 +1467,7 @@ mobile-section-beneficios-displey-2 {
     color: #070606;
     margin: 30px 0 20px;
   }
-  .btn-unir-mobile {
+  .btn-unir-mobile{
     font-size: 20px;
     position: relative;
     top: -1rem;
@@ -1775,7 +1763,7 @@ mobile-section-beneficios-displey-2 {
   }
 
   .ganadores-card {
-    width: 33%;
+    width: 100%;
     height: 300px;
     background: #ffffff;
     box-shadow: 0px 8px 15px rgba(130, 185, 219, 0.45);
@@ -1802,10 +1790,6 @@ mobile-section-beneficios-displey-2 {
   .navbar {
     padding-right: 0;
     padding-left: 0;
-  }
-  .container .home-img .logo-home {
-    width: 70%;
-    border-radius: 32px;
   }
 
   .img-seniora {
@@ -1983,7 +1967,7 @@ mobile-section-beneficios-displey-2 {
     transform: rotate(75deg);
     position: absolute;
     right: 4px;
-    bottom: -31px;
+    bottom: -50px;
     width: 97px;
   }
 
@@ -2054,7 +2038,7 @@ mobile-section-beneficios-displey-2 {
   .sub-footer {
     display: none;
   }
-}
+
 
 .timelime-sec {
   margin-top: 40px;
@@ -2277,3 +2261,4 @@ img {
   border-radius: 6.73695px;
 }
  */
+}
