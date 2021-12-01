@@ -320,7 +320,16 @@ const ITEMS_CONTENT_BENEFICIOS_SECTION_2 = ['Motivar la innovación desde la es
     'Construir un arca de buenas prácticas que pueda ser compartida a nivel nacional.']
 
 const populateListItems = (section) => {
+  
     const items = document.getElementsByClassName('item-beneficios')
+    for (let i = 0; i < items.length; i++) {
+        items[i].children[1].innerHTML = section == 1 ? ITEMS_CONTENT_BENEFICIOS_SECTION_1[i] : ITEMS_CONTENT_BENEFICIOS_SECTION_2[i];
+    }
+}
+
+const populateListItemsMobile = (section) => {
+    
+    const items = document.getElementsByClassName('item-beneficios-mobile')
     for (let i = 0; i < items.length; i++) {
         items[i].children[1].innerHTML = section == 1 ? ITEMS_CONTENT_BENEFICIOS_SECTION_1[i] : ITEMS_CONTENT_BENEFICIOS_SECTION_2[i];
     }
@@ -368,7 +377,7 @@ const clickBtnBeneficiosMobile = (element, section) => {
 
         transformBtnBeneficiosBookIconToGreenHandler(true);
     }
-
+    populateListItemsMobile(section);
 }
 
 

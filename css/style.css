@@ -736,6 +736,13 @@ section:nth-child(5)
   max-width: 90%;
 }
 
+.item-beneficios-mobile {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.2rem;
+  max-width: 90%;
+}
+
 .mini-rectangle-beneficios {
   min-width: 20px;
   min-height: 5px;
