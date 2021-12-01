@@ -118,12 +118,10 @@
 
   <!-- Video pop-up start -->
   <div class="video-popup text-center">
-    <div class="video-popup-inner">
+    <div class="video-popup-inner" style='position:relative;margin: -3rem auto'>
       <i class="fas fa-times video-popup-close"></i>
-      <video controls>
-        <source src="./videos/principal.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe id="ganadores-modal-video" src="https://drive.google.com/file/d/1Svr5GJzIgJ33nngGeKhMjYL89JVAUxO-/preview"
+        width="98%" height="500px" allow="autoplay" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   </div>
   </div>
@@ -238,11 +236,9 @@
             <a class="btn-ser-parte" href="https://es.surveymonkey.com/r/FondoIn2020">¡Quiero ser parte!</a>
           </div>
           <div class="center-video text-center" style="overflow: hidden;">
-            <video controls>
-              <source src="./videos/principal.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <!-- <img class="video-play-btn-2" src="./img/ver-video-am.png" alt=""> -->
+            <iframe id="ganadores-modal-video"
+              src="https://drive.google.com/file/d/1AjE_BwG2KWK6cy57YFB-87mjqK3y4YBE/preview" width="30%" height="200px"
+              allow="autoplay" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
           <div class="row text-center">
             <div class="col-lg-4 col-md-12">
@@ -532,7 +528,6 @@
                 font-weight: bold;
                 font-size: 25px;
                 line-height: 30px;
-                
                 color: #000000;">Biblioteca
                   Virtual</h5>
                 <a id='ganadores-header-download' class="botonUnir" target="_blank" download>
@@ -548,12 +543,11 @@
               </div>
               <div class="modal-body">
                 <img id='ganadores-modal-img' src="./img/ganadores-1-1.png" alt="">
-                <div class="modal-body-ganadores">
+                <div id='video-container' class="modal-body-ganadores">
                   <div class="home-btn" style="cursor: pointer;">
-                    <video id="ganadores-modal-video" style="width: 98%;" controls>
-                      <source src="./videos/principal.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
+                    <iframe id="ganadores-modal-video"
+                      src="https://drive.google.com/file/d/1hxDo8N8pbn9La4Zd2Tb0psAQjnoNcqxp/preview" width="98%"
+                      height="100%" allow="autoplay" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   </div>
                 </div>
                 <p id='ganadores-modal-p' class="ganadores-body-p">
@@ -762,14 +756,16 @@
             </div>
             <div>
               <div class="gradient-border-bottom">
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/311714255"
-                  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="embed-responsive-item"
+                  src="https://drive.google.com/file/d/1qAfJSHISzb7aJAEwQHmOxijI8yh8W6f-/preview" webkitallowfullscreen
+                  mozallowfullscreen allowfullscreen></iframe>
               </div>
             </div>
             <div>
               <div class="gradient-border-bottom">
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/311714146"
-                  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="embed-responsive-item"
+                  src="https://drive.google.com/file/d/1_eFzb7XGuemDtXKHpsQBC9yn3inM7hN9/preview" webkitallowfullscreen
+                  mozallowfullscreen allowfullscreen></iframe>
               </div>
             </div>
           </div>

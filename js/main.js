@@ -352,7 +352,7 @@ const clickBtnBeneficiosMobile = (element, section) => {
         element.classList.add('btn-beneficios-section-active');
         const btnSection2 = document.getElementById('section-2-mobile')
         btnSection2.classList.remove('btn-beneficios-section-active');
-        
+
         const sec1 = document.getElementById('sec-2-beneficios')
         sec1.classList.remove('show');
         transformBtnBeneficiosCometaIconToGreenHandler(true);
@@ -392,51 +392,53 @@ const expandGanadores = (index, el, element) => {
     if (el == 'Primera-Edicion') {
         if (index == 0) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_biblioteca_virtual.pdf')
-            document.getElementById('ganadores-modal-video').setAttribute('src', './videos/principal.mp4')
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/1VQk_GdRUlojHhu4SkVlZG91agtCer0Gz/preview')
             document.getElementById('ganadores-title-modal').innerHTML = 'Biblioteca Virtual'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-1.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
-    <strong>Elaborado por:</strong>
-    María Alejandra Ureña
-    Socorro Méndez
-    Erik Flores
-    <strong>Politécnico Manuel Acevedo Serrano</strong>`;
+            <strong>Elaborado por:</strong>
+            María Alejandra Ureña
+            Socorro Méndez
+            Erik Flores
+            <strong>Politécnico Manuel Acevedo Serrano</strong>`;
         }
 
         if (index == 1) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_fomento_creatividad.pdf')
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-2.png')
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/11F8gE12rWyX1ZF0gMj-PCo_7IYEK9V-y/preview')
             document.getElementById('ganadores-title-modal').innerHTML = 'Fomento de la lectura con la Creatividad'
             document.getElementById('ganadores-modal-p').innerHTML = `
-        <strong>Elaborado por:</strong> 
-        Yaneris Carrasco
-Marcily Montás
-        <strong>Instituto Politécnico Hainamosa</strong>`;
+                <strong>Elaborado por:</strong> 
+                Yaneris Carrasco
+                Marcily Montás
+                <strong>Instituto Politécnico Hainamosa</strong>`;
 
         }
 
         if (index == 2) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/premio_innovacion_matematica.pdf')
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-3.png')
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/1Tg0waKci9tbAbiJV-ULLDFkf0UK2CpEM/preview')
             document.getElementById('ganadores-title-modal').innerHTML = 'Innovación y Diversificación de las Matemáticas'
             document.getElementById('ganadores-modal-p').innerHTML = `
-        <strong>Elaborado por:</strong>
-        Waly Rodríguez
-
-        <strong>Politécnico El Ave María </strong>`;
+            <strong>Elaborado por:</strong>
+            Waly Rodríguez
+            <strong>Politécnico El Ave María </strong>`;
 
         }
 
         if (index == 3) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/IE.pdf')
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-1-4.png')
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/1TZSw_6_Ve0kqs9sU0FrUE3UCqXESNs1J/preview')
             document.getElementById('ganadores-title-modal').innerHTML = 'Invernadero Escolar'
             document.getElementById('ganadores-modal-p').innerHTML = `
-        <strong>Elaborado por:</strong>
-        Dorka Contreras
-Laura Corporán
-Martha Vicioso
-        <strong>Politécnico San José (S.D.)</strong>`;
+            <strong>Elaborado por:</strong>
+            Dorka Contreras
+            Laura Corporán
+            Martha Vicioso
+            <strong>Politécnico San José (S.D.)</strong>`;
 
         }
     }
@@ -445,6 +447,7 @@ Martha Vicioso
         if (index == 0) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/MLQA.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Mira lo que Aprendí'
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/13W_bu4djcVehMFqKx7TIz_Obf3x3VEG1/preview')
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-2-1.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
                     <strong>Elaborado por:</strong>
@@ -457,6 +460,8 @@ Martha Vicioso
         if (index == 1) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/VG.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Variabilidad Genética y Crianza de Conejos'
+            document.getElementById('video-container').style.display = 'none'
+            document.getElementById('ganadores-modal-p').style.width = '100%'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-2-2.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
                     <strong>Elaborado por:</strong> 
@@ -469,7 +474,7 @@ Martha Vicioso
     if (el == 'Tercera-Edicion') {
         if (index == 0) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/CEN.pdf')
-            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/1hxDo8N8pbn9La4Zd2Tb0psAQjnoNcqxp/view?usp=sharing')
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/1kBzrkew9Ml3kMC3fKUQhe_FBxN8ywWW-/preview')
             document.getElementById('ganadores-title-modal').innerHTML = 'CEN Makerspace'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-3-1.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
@@ -481,6 +486,7 @@ Martha Vicioso
 
         if (index == 1) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/CQL.pdf')
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/1hxDo8N8pbn9La4Zd2Tb0psAQjnoNcqxp/preview')
             document.getElementById('ganadores-title-modal').innerHTML = 'CQL: Cálculo de la química para la limpieza'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-3-2.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
@@ -493,6 +499,7 @@ Martha Vicioso
 
         if (index == 2) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/LUDUM.pdf')
+            document.getElementById('ganadores-modal-video').setAttribute('src', 'https://drive.google.com/file/d/1RrUZeRbWvn5jzSyQ7hs0NeXrwz8AQMQg/preview')
             document.getElementById('ganadores-title-modal').innerHTML = 'LUDUM'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-3-4.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
@@ -510,45 +517,51 @@ Martha Vicioso
         if (index == 0) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/Proyecto Dron.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Proyecto Dron';
-            document.getElementById('ganadores-modal-video').setAttribute('src', './videos/principal.mp4')
+            document.getElementById('video-container').style.display = 'none'
+            document.getElementById('ganadores-modal-p').style.width = '100%'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-1.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
-    <strong>Elaborado por:</strong>
-    José Enrique Ulloa Ferreira
-    <strong>Centro de Excelencia Lic. Científico Dr. Miguel Canela</strong>`;
+            <strong>Elaborado por:</strong>
+            José Enrique Ulloa Ferreira
+            <strong>Centro de Excelencia Lic. Científico Dr. Miguel Canela</strong>`;
         }
 
         if (index == 1) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/me.pdf')
+            document.getElementById('video-container').style.display = 'none'
+            document.getElementById('ganadores-modal-p').style.width = '100%'
             document.getElementById('ganadores-title-modal').innerHTML = 'La Meteorología en la educación';
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-2.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
-        <strong>Elaborado por:</strong> 
-        Eduardo Ventura Muñoz
-        <strong>Colegio San Judas Tadeo</strong>`;
-
+            <strong>Elaborado por:</strong> 
+            Eduardo Ventura Muñoz
+            <strong>Colegio San Judas Tadeo</strong>`;
         }
 
         if (index == 2) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/ta.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Techos Acuápticos';
+            document.getElementById('video-container').style.display = 'none'
+            document.getElementById('ganadores-modal-p').style.width = '100%'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-3.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
-        <strong>Elaborado por:</strong>
-        Jaribell Tavares Goris
-        Alessio Puglisi        
-        <strong>Politécnico ITLA</strong>`;
+            <strong>Elaborado por:</strong>
+            Jaribell Tavares Goris
+            Alessio Puglisi        
+            <strong>Politécnico ITLA</strong>`;
 
         }
         if (index == 3) {
             document.getElementById('ganadores-header-download').setAttribute('href', './files/gm.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Guía Metodológica';
+            document.getElementById('video-container').style.display = 'none'
+            document.getElementById('ganadores-modal-p').style.width = '100%'
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-4.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
-        <strong>Elaborado por:</strong>
-        Lauristely Peña Solano 
-        María del Mar González Tejera        
-        <strong>Secundaria Babeque</strong>`;
+            <strong>Elaborado por:</strong>
+            Lauristely Peña Solano 
+            María del Mar González Tejera        
+            <strong>Secundaria Babeque</strong>`;
         }
 
     }
