@@ -1450,7 +1450,7 @@ mobile-section-beneficios-displey-2 {
   .publicaciones-sec .download {
     position: absolute;
     bottom: 37px;
-    right: 100px;
+    left: 156px;
     width: 110px !important;
   }
 
