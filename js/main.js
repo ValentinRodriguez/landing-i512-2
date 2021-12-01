@@ -510,46 +510,41 @@ Martha Vicioso
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-1.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
     <strong>Elaborado por:</strong>
-    Rafel Espín
-Hilda Karina Abreu
-    <strong>Colegio Escuela Nueva (Santo Domingo)</strong>`;
+    José Enrique Ulloa Ferreira
+    <strong>Centro de Excelencia Lic. Científico Dr. Miguel Canela</strong>`;
         }
 
         if (index == 1) {
-            document.getElementById('ganadores-header-download').setAttribute('href', './files/La Meteorología en la educacion.pdf')
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/me.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'La Meteorología en la educación';
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-2.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
         <strong>Elaborado por:</strong> 
-        Junior Radhamés Sánchez Vásquez
-Ángela María Díaz Díaz
-        <strong>Instituto Agronómico y Técnico Salesiano (La Vega)</strong>`;
+        Eduardo Ventura Muñoz
+        <strong>Colegio San Judas Tadeo</strong>`;
 
         }
 
         if (index == 2) {
-            document.getElementById('ganadores-header-download').setAttribute('href', './files/Techos Acuapónicos.pdf')
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/ta.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Techos Acuápticos';
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-3.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
         <strong>Elaborado por:</strong>
-        Mariela Polanco Polanco
-        Brenda Batista Rosario
-        Eliana Francisco Cuello        
-        <strong>Instituto Politécnico María de la Altagracia de Villa Duarte (Santo Domingo)</strong>`;
+        Jaribell Tavares Goris
+        Alessio Puglisi        
+        <strong>Politécnico ITLA</strong>`;
 
         }
         if (index == 3) {
-            document.getElementById('ganadores-header-download').setAttribute('href', './files/Guía Metodológica.pdf')
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/gm.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Guía Metodológica';
             document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-4.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
         <strong>Elaborado por:</strong>
-        Mariela Polanco Polanco
-        Brenda Batista Rosario
-        Eliana Francisco Cuello        
-        <strong>Instituto Politécnico María de la Altagracia de Villa Duarte (Santo Domingo)</strong>`;
-
+        Lauristely Peña Solano 
+        María del Mar González Tejera        
+        <strong>Secundaria Babeque</strong>`;
         }
 
     }
