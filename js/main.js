@@ -51,9 +51,11 @@ $(document).ready(function () {
     // SCROLL
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 90) {
-            $(".navbar").addClass("navbar-shrink");
+            document.getElementById('navbar').classList.add('navbar-shrink');
+            // $(".navbar").classList().addClass("navbar-shrink");
         } else {
-            $(".navbar").removeClass("navbar-shrink");
+            document.getElementById('navbar').classList.remove('navbar-shrink');
+            // $(".navbar").removeClass("navbar-shrink");
         }
     })
 
