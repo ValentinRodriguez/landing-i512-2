@@ -1116,9 +1116,8 @@ mobile-section-beneficios-displey-2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
-
-    row-gap: 20px;
+    width: 70%;
+    gap: 10px;
   }
 
   .ganadores-options {
