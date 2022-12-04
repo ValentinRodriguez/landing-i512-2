@@ -46,25 +46,25 @@ const ganadores = {
     }],
     'Quinta-Edicion': [{
         title: 'Licencia para el manejo de las emociones',
-        imgRoute: './img/ganadores-4-1.png'
+        imgRoute: './img/EQUIPO_LICENCIA_EMOCIONES.png'
     }, {
         title: 'La Música en los Procesos de Lectoescritura',
-        imgRoute: './img/ganadores-4-2.png'
+        imgRoute: './img/EQUIPO_MUSICA_PROCESOS_LECTOESCRITURA.png'
     }, {
         title: 'Proyecto R.I.E.',
-        imgRoute: './img/ganadores-4-3.png'
+        imgRoute: './img/PROYECTO_RIE.png'
     },
     {
         title: 'Acuaponía educativa integrando las TIC',
-        imgRoute: './img/ganadores-4-4.png'
+        imgRoute: './img/EQUIPO_ACUAPONIA_Y_TICS.png'
     },
     {
         title: 'Hurricane Engineering Center (HEC)',
-        imgRoute: './img/ganadores-4-4.png'
+        imgRoute: './img/PROYECTO_HEC.png'
     },
     {
         title: 'Think Like Me',
-        imgRoute: './img/ganadores-4-4.png'
+        imgRoute: './img/Profesoras_think_like_me.png'
     }]
 }
 
@@ -291,68 +291,77 @@ const expandGanadores = (index, el, element) => {
 
     if (el == 'Quinta-Edicion') {
         if (index == 0) {
-            document.getElementById('ganadores-header-download').setAttribute('href', './files/Proyecto Dron.pdf')
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/Licencia_manejo_emociones.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Licencia para el manejo de las emociones';
             document.getElementById('video-container').style.display = 'none'
             document.getElementById('ganadores-modal-p').style.width = '100%'
-            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-1.png')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/EQUIPO_LICENCIA_EMOCIONES.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
             <strong>Elaborado por:</strong>
             Carolina Aimee Troncoso Veloz,
             Kaherine Marlene Belliard De Jesús y 
-            Sarah Nicole Sosa Lockward Colegio del Apostolado
-            <strong>Centro de Excelencia Lic. Científico Dr. Miguel Canela</strong>`;
+            Sarah Nicole Sosa Lockward
+            <strong>Colegio del Apostolado</strong>`;
         }
 
         if (index == 1) {
-            document.getElementById('ganadores-header-download').setAttribute('href', './files/me.pdf')
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/Musica.pdf')
             document.getElementById('video-container').style.display = 'none'
             document.getElementById('ganadores-modal-p').style.width = '100%'
             document.getElementById('ganadores-title-modal').innerHTML = 'La Música en los Procesos de Lectoescritura';
-            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-2.png')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/EQUIPO_MUSICA_PROCESOS_LECTOESCRITURA.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
             <strong>Elaborado por:</strong> 
-            María Estefany Vásquez Música, 
-            Yoenmy Valerio y Jenniffer Reyes Instituto Iberia
-            <strong>Colegio San Judas Tadeo</strong>`;
+            María Estefany Vásquez Música, Yoenmy Valerio y Jenniffer Reyes
+            <strong>Instituto Iberia</strong>`;
         }
 
         if (index == 2) {
-            document.getElementById('ganadores-header-download').setAttribute('href', './files/ta.pdf')
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/R.I.E.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Proyecto R.I.E.';
             document.getElementById('video-container').style.display = 'none'
             document.getElementById('ganadores-modal-p').style.width = '100%'
-            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-3.png')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/PROYECTO_RIE.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
             <strong>Elaborado por:</strong>
             Junior Radhamés Sánchez Vásquez, 
-            Ángela María Díaz Díaz y Luis Alfredo Fernandez Serrata Instituto Agronómico y Técnico Salesiano       
-            <strong>Politécnico ITLA</strong>`;
+            Ángela María Díaz Díaz y Luis Alfredo Fernandez Serrata       
+            <strong>Instituto Agronómico y Técnico Salesiano </strong>`;
 
         }
         if (index == 3) {
-            document.getElementById('ganadores-header-download').setAttribute('href', './files/gm.pdf')
-            document.getElementById('ganadores-title-modal').innerHTML = 'Hurricane Engineering Center (HEC)';
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/Acuaponia.pdf')
+            document.getElementById('ganadores-title-modal').innerHTML = 'Acuaponía educativa integrando las TIC';
             document.getElementById('video-container').style.display = 'none'
             document.getElementById('ganadores-modal-p').style.width = '100%'
-            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-4.png')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/EQUIPO_ACUAPONIA_Y_TICS.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
             <strong>Elaborado por:</strong>
             Rafaela Belkis Hernández Peña De Rodríguez, 
-            Alba Rosa Vásquez Delance y Jinny Crismely Ureña Vásquez 
-            Instituto Politécnico Industrial de Santiago(IPISA)     
-            <strong>Secundaria Babeque</strong>`;
+            Alba Rosa Vásquez Delance y Jinny Crismely Ureña Vásquez                
+            <strong>Instituto Politécnico Industrial de Santiago(IPISA)  </strong>`;
         }
         if (index == 4) {
-            document.getElementById('ganadores-header-download').setAttribute('href', './files/gm.pdf')
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/HEC.pdf')
+            document.getElementById('ganadores-title-modal').innerHTML = 'Hurricane Engineering Center (HEC)';
+            document.getElementById('video-container').style.display = 'none'
+            document.getElementById('ganadores-modal-p').style.width = '100%'
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/PROYECTO_HEC.png')
+            document.getElementById('ganadores-modal-p').innerHTML = `
+            <strong>Elaborado por:</strong>
+            Jorge Armando Ruiz Taveras 
+            <strong>Escuela Internacional de Sosúa La Mulata I, El Batey</strong>`;
+        }
+        if (index == 5) {
+            document.getElementById('ganadores-header-download').setAttribute('href', './files/Think_like_me.pdf')
             document.getElementById('ganadores-title-modal').innerHTML = 'Think Like Me';
             document.getElementById('video-container').style.display = 'none'
             document.getElementById('ganadores-modal-p').style.width = '100%'
-            document.getElementById('ganadores-modal-img').setAttribute('src', './img/ganadores-4-4.png')
+            document.getElementById('ganadores-modal-img').setAttribute('src', './img/Profesoras_think_like_me.png')
             document.getElementById('ganadores-modal-p').innerHTML = `
             <strong>Elaborado por:</strong>
-            Natalia María De Jesús Pereyra y Paola Anabel Lee Bera Sustituta Permanente St. Michael’s School   
-            <strong>Secundaria Babeque</strong>`;
+            Natalia María De Jesús Pereyra y Paola Anabel Lee Bera Sustituta Permanente   
+            <strong>St. Michael’s School</strong>`;
         }
 
     }
@@ -365,7 +374,6 @@ const expandGanadores = (index, el, element) => {
 }
 
 const onClickGanadores = (edicion) => {
-    console.log(edicion);
     const createGanadores = document.getElementById('ganadores-container')
     createGanadores.innerHTML = '';
     limpiarGanadores();
